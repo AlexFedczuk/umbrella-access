@@ -2,7 +2,7 @@
 
 ## 4.1 Definicion del MVP
 
-El MVP (Producto Minimo Viable) de Umbrella Access sera una primera version sencilla del sistema. Permitira solicitar un turno, verificar si se puede aprobar y registrar el ingreso y el egreso.
+El MVP (Producto Minimo Viable) de Umbrella Access sera una primera version sencilla del sistema. Permitira solicitar un turno, verificar si se puede aprobar y registrar el ingreso y el egreso. Este alcance es tentativo y puede cambiar despues de validar las reglas con el cliente.
 
 Se piensa probar en un escenario pequeño, con algunos usuarios y sectores cargados previamente. La idea es comprobar si el sistema ayuda a ordenar la gestion manual de los accesos.
 
@@ -37,7 +37,8 @@ Se piensa probar en un escenario pequeño, con algunos usuarios y sectores carga
 - Las reglas de autorizacion, horarios y capacidad son proporcionadas por los responsables de cada sector.
 - La identidad se verifica mediante los datos registrados y el personal de seguridad; no se requiere biometria.
 - Las notificaciones pueden modelarse mediante correo o una simulacion equivalente, sin exigir una integracion productiva.
-- El alcance es tentativo y puede cambiar despues de revisar los casos de uso y el prototipo del equipo.
+- No se incluye biometria ni torniquetes, porque el MVP se concentra en la gestion digital de turnos y en el registro manual realizado por seguridad.
+- El alcance puede cambiar despues de revisar los casos de uso, el prototipo y la charla con el cliente.
 
 ## 4.5 Criterios de validacion del MVP
 

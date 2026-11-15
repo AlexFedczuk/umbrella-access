@@ -2,7 +2,7 @@
 
 ## 1.1 Dominio elegido
 
-El dominio elegido es la gestion de turnos de acceso a instalaciones restringidas de Umbrella Corporation.
+El dominio elegido es la gestion de turnos de acceso a instalaciones restringidas de Umbrella Corporation. Esta definicion se considera una primera propuesta y debera confirmarse con el cliente en la charla correspondiente.
 
 Umbrella Access sera un sistema destinado a organizar el ingreso programado de empleados, visitantes y proveedores a sectores que requieren autorizacion previa. Permitira solicitar, aprobar, cancelar y reprogramar turnos de acceso.
 
@@ -76,4 +76,4 @@ Umbrella Access resolvera la gestion manual y desorganizada de los accesos a sec
 
 Los objetivos se expresan mediante la metodologia SMART porque son especificos, medibles, alcanzables, relevantes y limitados en el tiempo. Los stakeholders contemplan a los usuarios finales y a las areas operativas, administrativas, tecnicas y directivas relacionadas con el proyecto.
 
-Los objetivos se relacionan con las funciones principales del MVP y se comprobaran mediante ejemplos y pruebas del sistema.
+Los objetivos se relacionan con las funciones principales del MVP y se comprobaran mediante ejemplos y pruebas del sistema. Las reglas que dependan de decisiones del cliente quedaran sujetas a la validacion de la charla.
