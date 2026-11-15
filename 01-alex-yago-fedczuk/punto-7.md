@@ -1,148 +1,128 @@
-# Punto 7 - Pruebas unitarias de los casos de uso
+# Punto 7 - Pruebas de los casos de uso
 
-## 7.1 Criterio de trabajo
+## 7.1 Introduccion
 
-Las pruebas se basan en los doce casos de uso documentados por el equipo en el punto 3: iniciar sesión, consultar disponibilidad, solicitar turno, consultar turnos, reprogramar turno, cancelar turno, buscar turno, verificar autorización, registrar ingreso, registrar egreso, configurar sector y gestionar autorizaciones.
+En este punto se proponen pruebas para los doce casos de uso del punto 3. La idea es comprobar que las funciones principales de Umbrella Access respondan correctamente y que también se contemplen algunos errores frecuentes.
 
-Cada prueba verifica una regla puntual mediante un escenario positivo y, cuando corresponde, un escenario alternativo o de rechazo.
+Las pruebas están escritas de forma simple. Cuando el sistema se implemente, podrán transformarse en pruebas unitarias dentro del lenguaje y herramienta que el equipo elija.
 
-## 7.2 Pruebas unitarias
+## 7.2 Casos de prueba
 
-### TU-CU-01 - Iniciar sesión
+### TU-01 - Iniciar sesión
 
-**Dado** un usuario registrado y activo con credenciales válidas.
+- **Caso de uso:** CU-01 Iniciar sesión.
+- **Dado:** un usuario registrado y activo.
+- **Cuando:** ingresa correctamente su identificación y contraseña.
+- **Entonces:** el sistema permite el acceso y muestra el panel correspondiente a su perfil.
+- **Si ocurre un error:** con datos incorrectos, el acceso se rechaza y se muestra un mensaje.
 
-**Cuando** ingresa su identificación y contraseña.
+### TU-02 - Consultar disponibilidad
 
-**Entonces** el sistema valida las credenciales, identifica el perfil y habilita el panel correspondiente.
+- **Caso de uso:** CU-02 Consultar disponibilidad.
+- **Dado:** un sector con horarios y capacidad configurados.
+- **Cuando:** el solicitante elige una fecha.
+- **Entonces:** el sistema muestra los horarios disponibles.
+- **Si ocurre un error:** los horarios completos aparecen como no disponibles.
 
-**Caso alternativo:** con credenciales incorrectas o cuenta inactiva, el acceso se rechaza y no se inicia una sesión.
+### TU-03 - Solicitar turno
 
-### TU-CU-02 - Consultar disponibilidad
+- **Caso de uso:** CU-03 Solicitar turno.
+- **Dado:** un solicitante autorizado y una franja disponible.
+- **Cuando:** completa los datos y confirma la solicitud.
+- **Entonces:** el sistema registra el turno, genera un código y muestra su estado.
+- **Si ocurre un error:** si falta un dato, no hay cupo o falta autorización, la solicitud no se confirma.
 
-**Dado** un solicitante autenticado que eligió una instalación y un sector.
+### TU-04 - Consultar turnos
 
-**Cuando** selecciona una fecha.
+- **Caso de uso:** CU-04 Consultar turnos.
+- **Dado:** un solicitante con uno o más turnos registrados.
+- **Cuando:** ingresa a la sección Mis turnos.
+- **Entonces:** puede ver sus reservas, estados, fechas y detalles.
+- **Si ocurre un error:** si no tiene reservas, el sistema muestra un aviso y no muestra turnos de otras personas.
 
-**Entonces** el sistema muestra las franjas horarias disponibles según los cupos y permite elegir una franja habilitada.
+### TU-05 - Reprogramar turno
 
-**Caso alternativo:** los horarios completos aparecen deshabilitados y un sector no habilitado no puede seleccionarse.
+- **Caso de uso:** CU-05 Reprogramar turno.
+- **Dado:** un turno vigente que puede modificarse.
+- **Cuando:** el solicitante elige otra fecha y horario disponible y confirma.
+- **Entonces:** el turno se actualiza y se libera el horario anterior.
+- **Si ocurre un error:** si el nuevo horario está completo, se conserva el turno original.
 
-### TU-CU-03 - Solicitar turno
+### TU-06 - Cancelar turno
 
-**Dado** un solicitante autenticado y una instalación con sectores configurados.
+- **Caso de uso:** CU-06 Cancelar turno.
+- **Dado:** un turno vigente y cancelable.
+- **Cuando:** el solicitante confirma la cancelación.
+- **Entonces:** el estado pasa a cancelado y se libera el lugar.
+- **Si ocurre un error:** un turno ya usado o ya cancelado no se modifica.
 
-**Cuando** completa motivo, sector, fecha y horario, y confirma la solicitud.
+### TU-07 - Buscar turno
 
-**Entonces** el sistema valida cupo y autorización, registra la solicitud, genera un código único y asigna estado confirmado o pendiente.
+- **Caso de uso:** CU-07 Buscar turno.
+- **Dado:** un guardia que inició sesión.
+- **Cuando:** busca por nombre, documento o código.
+- **Entonces:** el sistema muestra las reservas que coinciden con la búsqueda.
+- **Si ocurre un error:** si no hay coincidencias, se informa que no se encontraron resultados.
 
-**Caso alternativo:** si se agotó el cupo, falta un dato o la autorización requiere aprobación, la solicitud no habilita el ingreso y conserva el estado correcto.
+### TU-08 - Verificar autorización
 
-### TU-CU-04 - Consultar turnos
+- **Caso de uso:** CU-08 Verificar autorización.
+- **Dado:** una reserva localizada y una persona presente en el puesto de control.
+- **Cuando:** el guardia revisa los datos del turno y la identidad.
+- **Entonces:** el sistema indica si el acceso está autorizado, pendiente o denegado.
+- **Si ocurre un error:** una reserva cancelada, fuera de horario o con datos incorrectos no permite el ingreso.
 
-**Dado** un solicitante autenticado con reservas asociadas.
+### TU-09 - Registrar ingreso
 
-**Cuando** abre la sección Mis turnos y selecciona una reserva.
+- **Caso de uso:** CU-09 Registrar ingreso.
+- **Dado:** un turno autorizado y una persona correctamente identificada.
+- **Cuando:** el guardia registra el ingreso.
+- **Entonces:** se guarda la fecha y hora, y se actualiza la ocupación del sector.
+- **Si ocurre un error:** no se registra el ingreso si la capacidad está completa o si ya existía un ingreso activo.
 
-**Entonces** el sistema muestra únicamente sus turnos, con fecha, lugar, estado, detalle y requisitos de acceso.
+### TU-10 - Registrar egreso
 
-**Caso alternativo:** si no existen reservas, muestra un aviso; una reserva cancelada no ofrece acciones incompatibles.
+- **Caso de uso:** CU-10 Registrar egreso.
+- **Dado:** una persona que tiene un ingreso activo.
+- **Cuando:** el guardia registra la salida.
+- **Entonces:** se guarda la fecha y hora del egreso y se reduce la ocupación.
+- **Si ocurre un error:** no se registra una salida si no había un ingreso previo.
 
-### TU-CU-05 - Reprogramar turno
+### TU-11 - Configurar sector
 
-**Dado** un turno vigente y modificable.
+- **Caso de uso:** CU-11 Configurar sector.
+- **Dado:** un administrador con permiso para modificar la configuración.
+- **Cuando:** cambia la capacidad o los horarios y confirma.
+- **Entonces:** el sistema guarda los nuevos datos.
+- **Si ocurre un error:** no se guardan valores inválidos, como una capacidad negativa o un horario incorrecto.
 
-**Cuando** el solicitante elige una nueva fecha y franja, y confirma el cambio.
+### TU-12 - Gestionar autorizaciones
 
-**Entonces** el sistema valida nuevamente las restricciones, actualiza el turno y libera el cupo anterior.
-
-**Caso alternativo:** si la nueva franja está completa o el turno no es modificable, conserva sin cambios la reserva original.
-
-### TU-CU-06 - Cancelar turno
-
-**Dado** un turno vigente y cancelable.
-
-**Cuando** el solicitante confirma la cancelación.
-
-**Entonces** el sistema cambia el estado a cancelado, libera el cupo correspondiente e informa el resultado.
-
-**Caso alternativo:** si el solicitante desiste, el turno permanece igual; un turno usado o ya cancelado no vuelve a modificarse.
-
-### TU-CU-07 - Buscar turno
-
-**Dado** un guardia autenticado y habilitado para consultar los accesos de su instalación.
-
-**Cuando** busca por nombre, documento o código.
-
-**Entonces** el sistema filtra los turnos del día y permite seleccionar la reserva correcta.
-
-**Caso alternativo:** si no hay coincidencias, informa que no existen resultados; si hay varias, muestra los datos necesarios para distinguirlas.
-
-### TU-CU-08 - Verificar autorización
-
-**Dado** un guardia autenticado con una reserva localizada.
-
-**Cuando** coteja la identidad y consulta el código del turno.
-
-**Entonces** el sistema comprueba estado, instalación, sector, fecha y horario, y muestra Autorizado, Pendiente o Denegado.
-
-**Caso alternativo:** una reserva pendiente, cancelada, inexistente o fuera de horario no habilita el ingreso ni registra por sí sola una entrada.
-
-### TU-CU-09 - Registrar ingreso
-
-**Dado** un turno autorizado, una identidad verificada y una persona que todavía no figura dentro de la instalación.
-
-**Cuando** el guardia selecciona Registrar ingreso.
-
-**Entonces** el sistema registra fecha, hora y guardia responsable, marca la presencia como Dentro de la instalación y actualiza la ocupación.
-
-**Caso alternativo:** bloquea el registro si ya existe un ingreso activo, la autorización dejó de ser válida o la capacidad está completa.
-
-### TU-CU-10 - Registrar egreso
-
-**Dado** una persona con un ingreso activo.
-
-**Cuando** el guardia selecciona Registrar salida.
-
-**Entonces** el sistema registra la fecha y hora del egreso, marca la presencia como Finalizado y disminuye la ocupación.
-
-**Caso alternativo:** si no existe un ingreso previo o ya se registró la salida, no crea un egreso duplicado.
-
-### TU-CU-11 - Configurar sector
-
-**Dado** un administrador autenticado con permisos de configuración.
-
-**Cuando** modifica capacidad u horarios y confirma los valores.
-
-**Entonces** el sistema valida y guarda la configuración del sector.
-
-**Caso alternativo:** rechaza valores inválidos y no aplica cambios que generen conflictos con reservas existentes.
-
-### TU-CU-12 - Gestionar autorizaciones
-
-**Dado** un administrador autenticado y una persona registrada.
-
-**Cuando** modifica los sectores o niveles permitidos y confirma.
-
-**Entonces** el sistema valida y guarda la autorización actualizada.
-
-**Caso alternativo:** ante una persona inexistente, permiso inválido o cancelación de la operación, conserva los permisos anteriores.
-
-## 7.3 Trazabilidad con los requerimientos funcionales
-
-| Caso de uso | Requerimientos funcionales principales |
-|---|---|
-| CU-01 | RF-01 y RF-02 |
-| CU-02 | RF-03 y RF-04 |
-| CU-03 | RF-05, RF-06 y RF-07 |
-| CU-04 | RF-08 y RF-09 |
-| CU-05 | RF-10 y RF-11 |
-| CU-06 | RF-12 y RF-13 |
-| CU-07 | RF-14 |
-| CU-08 | RF-15 y RF-16 |
-| CU-09 | RF-17, RF-18 y RF-19 |
-| CU-10 | RF-20 y RF-21 |
-| CU-11 | RF-22 |
-| CU-12 | RF-23 |
-
-Estas pruebas cubren los flujos principales y alternativos definidos en el punto 3. Los requerimientos sobre notificaciones y reportes se consideran fuera de esta primera tanda porque aparecen asociados a historias de usuario todavía no convertidas en casos de uso formales.
+- **Caso de uso:** CU-12 Gestionar autorizaciones.
+- **Dado:** un administrador y una persona registrada.
+- **Cuando:** modifica los sectores o el nivel de autorización y confirma.
+- **Entonces:** se guardan los nuevos permisos.
+- **Si ocurre un error:** si la persona no existe o los datos son incorrectos, se mantienen los permisos anteriores.
+
+## 7.3 Relación con los requerimientos
+
+| Prueba | Caso de uso | Requerimientos relacionados |
+|---|---|---|
+| TU-01 | CU-01 Iniciar sesión | RF-01 y RF-02 |
+| TU-02 | CU-02 Consultar disponibilidad | RF-03 y RF-04 |
+| TU-03 | CU-03 Solicitar turno | RF-05, RF-06 y RF-07 |
+| TU-04 | CU-04 Consultar turnos | RF-08 y RF-09 |
+| TU-05 | CU-05 Reprogramar turno | RF-10 y RF-11 |
+| TU-06 | CU-06 Cancelar turno | RF-12 y RF-13 |
+| TU-07 | CU-07 Buscar turno | RF-14 |
+| TU-08 | CU-08 Verificar autorización | RF-15 y RF-16 |
+| TU-09 | CU-09 Registrar ingreso | RF-17, RF-18 y RF-19 |
+| TU-10 | CU-10 Registrar egreso | RF-20 y RF-21 |
+| TU-11 | CU-11 Configurar sector | RF-22 |
+| TU-12 | CU-12 Gestionar autorizaciones | RF-23 |
+
+## 7.4 Resultado esperado
+
+La prueba se considerará aprobada cuando el sistema realice el comportamiento indicado. Si ocurre alguno de los errores mencionados, también debe responder de la manera esperada sin guardar datos incorrectos.
+
+Por el momento, este documento presenta el diseño de las pruebas. La ejecución dependerá de que el equipo implemente el sistema y seleccione una herramienta de pruebas.

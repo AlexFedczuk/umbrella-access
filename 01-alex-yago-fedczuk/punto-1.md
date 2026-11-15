@@ -20,31 +20,31 @@ Disenar un sistema que permita gestionar de manera segura, ordenada y eficiente 
 
 ### Objetivo 1 - Centralizar las reservas
 
-Disenar y dejar especificada, antes de la entrega del trabajo practico, una unica plataforma que permita solicitar, consultar, cancelar y reprogramar turnos de acceso.
+Contar con una propuesta de sistema que permita solicitar, consultar, cancelar y reprogramar turnos de acceso antes de la entrega del trabajo practico.
 
 Indicador: documentar los casos de uso correspondientes a estas operaciones y validarlos mediante pruebas funcionales.
 
 ### Objetivo 2 - Validar autorizaciones
 
-Lograr que, durante la prueba funcional del MVP, el sistema valide automaticamente y antes de confirmar cada turno si la persona posee el nivel de autorizacion requerido para ingresar al sector seleccionado.
+Lograr que, en las pruebas del MVP, el sistema valide antes de confirmar un turno si la persona esta autorizada para ingresar al sector seleccionado.
 
 Indicador: ninguna reserva podra confirmarse si el usuario no cuenta con la autorizacion correspondiente.
 
 ### Objetivo 3 - Controlar la capacidad
 
-Evitar que, durante la prueba funcional del MVP, se confirme alguna reserva que supere la capacidad maxima permitida de un sector.
+Evitar que en las pruebas del MVP se confirmen reservas por encima de la capacidad maxima de un sector.
 
 Indicador: el sistema debera rechazar automaticamente las solicitudes que excedan la capacidad disponible.
 
 ### Objetivo 4 - Reducir el tiempo de gestion
 
-Reducir, durante la prueba piloto del MVP, el tiempo promedio necesario para registrar un turno de acceso de cinco minutos a menos de dos minutos.
+Intentar reducir en una prueba piloto el tiempo promedio para registrar un turno de cinco minutos a menos de dos minutos.
 
 Indicador: comparar una muestra de 30 solicitudes gestionadas manualmente con otra muestra de 30 solicitudes realizadas mediante Umbrella Access.
 
 ### Objetivo 5 - Registrar los ingresos
 
-Registrar digitalmente al menos el 95 por ciento de los ingresos correspondientes a turnos confirmados durante el primer periodo de prueba del MVP.
+Registrar digitalmente al menos el 95 por ciento de los ingresos de turnos confirmados durante la primera prueba del MVP.
 
 Indicador: comparar la cantidad de turnos confirmados con la cantidad de ingresos registrados por el personal de seguridad.
 
@@ -76,6 +76,4 @@ Umbrella Access resolvera la gestion manual y desorganizada de los accesos a sec
 
 Los objetivos se expresan mediante la metodologia SMART porque son especificos, medibles, alcanzables, relevantes y limitados en el tiempo. Los stakeholders contemplan a los usuarios finales y a las areas operativas, administrativas, tecnicas y directivas relacionadas con el proyecto.
 
-### Trazabilidad con el alcance del MVP
-
-Los objetivos 1 a 5 se validaran con las funcionalidades incluidas en el alcance del MVP del punto 4. Los indicadores se comprobaran mediante escenarios de prueba sobre solicitudes, autorizaciones, capacidad, registro de ingresos y notificaciones.
+Los objetivos se relacionan con las funciones principales del MVP y se comprobaran mediante ejemplos y pruebas del sistema.

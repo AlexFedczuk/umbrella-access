@@ -2,13 +2,13 @@
 
 ## 4.1 Definicion del MVP
 
-El MVP (Producto Minimo Viable) de Umbrella Access sera una version funcional y acotada del sistema que permita gestionar el ciclo basico de un turno de acceso a instalaciones restringidas: solicitarlo, validarlo, confirmarlo, consultarlo y registrar el ingreso y el egreso.
+El MVP (Producto Minimo Viable) de Umbrella Access sera una primera version sencilla del sistema. Permitira solicitar un turno, verificar si se puede aprobar y registrar el ingreso y el egreso.
 
-El MVP se propone para un escenario controlado de Umbrella Corporation, con usuarios y sectores previamente cargados. Su objetivo es validar que la organizacion pueda reemplazar la gestion manual de turnos por un flujo digital seguro y trazable.
+Se piensa probar en un escenario pequeño, con algunos usuarios y sectores cargados previamente. La idea es comprobar si el sistema ayuda a ordenar la gestion manual de los accesos.
 
 ## 4.2 Incluido en el MVP
 
-- Inicio de sesion y acceso segun rol: solicitante, personal de seguridad y administrador.
+- Inicio de sesion para los usuarios principales.
 - Solicitud de turnos seleccionando sector, fecha, horario y motivo.
 - Consulta del listado y detalle de los turnos propios.
 - Validacion de autorizacion, disponibilidad horaria y capacidad maxima.
@@ -16,9 +16,8 @@ El MVP se propone para un escenario controlado de Umbrella Corporation, con usua
 - Cancelacion y reprogramacion de turnos validos.
 - Consulta de la agenda diaria por el personal de seguridad.
 - Verificacion del turno y registro de ingreso y egreso.
-- Alta y configuracion basica de sectores, horarios, capacidad y requisitos.
-- Notificaciones de confirmacion, cambios y cancelaciones.
-- Registro de operaciones relevantes para consulta administrativa.
+- Una configuracion basica de sectores y horarios, realizada previamente por el administrador.
+- Mensajes simples para informar confirmaciones, cambios o errores.
 
 ## 4.3 Excluido del MVP
 
@@ -38,7 +37,7 @@ El MVP se propone para un escenario controlado de Umbrella Corporation, con usua
 - Las reglas de autorizacion, horarios y capacidad son proporcionadas por los responsables de cada sector.
 - La identidad se verifica mediante los datos registrados y el personal de seguridad; no se requiere biometria.
 - Las notificaciones pueden modelarse mediante correo o una simulacion equivalente, sin exigir una integracion productiva.
-- El alcance es tentativo y puede ajustarse luego de revisar los casos de uso y el prototipo del equipo.
+- El alcance es tentativo y puede cambiar despues de revisar los casos de uso y el prototipo del equipo.
 
 ## 4.5 Criterios de validacion del MVP
 
@@ -49,7 +48,7 @@ El MVP se considerara suficiente cuando pueda demostrarse que:
 3. Un solicitante puede cancelar o reprogramar un turno valido.
 4. El personal de seguridad puede consultar la agenda y registrar ingreso y egreso.
 5. El administrador puede configurar los datos basicos de un sector.
-6. Cada operacion relevante deja un estado o registro consultable.
+6. Los cambios principales muestran un estado o mensaje para el usuario.
 
 ## 4.6 Relacion con el punto 1
 
