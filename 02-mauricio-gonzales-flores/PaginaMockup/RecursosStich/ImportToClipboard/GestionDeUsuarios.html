@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-surface-variant": "#5c403f", "on-primary-container": "#ffdad8", "on-primary": "#ffffff", "primary-fixed": "#ffdad8", "on-tertiary-container": "#d9e3fb", "on-tertiary-fixed": "#111c2d", "on-error-container": "#93000a", "on-secondary-fixed-variant": "#44474f", "inverse-primary": "#ffb3b1", "on-error": "#ffffff", "surface-dim": "#d9dadc", "on-surface": "#191c1e", "error-container": "#ffdad6", "secondary": "#5c5e66", "on-secondary-container": "#62646d", "tertiary-fixed": "#d9e3fb", "inverse-surface": "#2e3132", "primary": "#9e001f", "on-primary-fixed-variant": "#92001c", "on-primary-fixed": "#410007", "primary-container": "#c8102e", "tertiary-container": "#5b657a", "primary-fixed-dim": "#ffb3b1", "on-secondary": "#ffffff", "surface-container": "#edeef0", "error": "#ba1a1a", "secondary-container": "#e0e2ec", "surface-bright": "#f8f9fb", "surface-container-high": "#e7e8ea", "surface-container-highest": "#e1e2e4", "surface-variant": "#e1e2e4", "on-tertiary-fixed-variant": "#3d475a", "on-tertiary": "#ffffff", "tertiary": "#434d61", "secondary-fixed": "#e0e2ec", "on-background": "#191c1e", "surface-container-lowest": "#ffffff", "surface": "#f8f9fb", "outline-variant": "#e5bdbb", "inverse-on-surface": "#f0f1f3", "outline": "#906f6e", "surface-tint": "#bf0229", "tertiary-fixed-dim": "#bdc7de", "on-secondary-fixed": "#191c22", "secondary-fixed-dim": "#c4c6d0", "background": "#f8f9fb", "surface-container-low": "#f3f4f6" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-lg": "1.5rem", "space-2xl": "3rem", "margin-desktop": "2rem", "space-sm": "0.5rem", "gutter": "1rem", "space-xl": "2rem", "gutter-desktop": "1.5rem", "margin": "1rem", "space-xs": "0.25rem", "space-md": "1rem" }, "fontFamily": { "label-sm": ["Inter"], "display-lg-mobile": ["Inter"], "display-lg": ["Inter"], "body-md": ["Inter"], "label-lg": ["Inter"], "headline-lg": ["Inter"], "headline-sm": ["Inter"], "headline-md": ["Inter"], "label-md": ["Inter"], "body-sm": ["Inter"], "body-lg": ["Inter"] }, "fontSize": { "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "700" }], "display-lg-mobile": ["26px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "display-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0", "fontWeight": "400" }], "label-lg": ["13px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "headline-sm": ["16px", { "lineHeight": "24px", "letterSpacing": "0", "fontWeight": "600" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-md": ["11px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0", "fontWeight": "400" }], "body-lg": ["15px", { "lineHeight": "22px", "letterSpacing": "0", "fontWeight": "400" }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col"><div class="h-14 px-space-md flex items-center gap-space-sm bg-surface-container-lowest"><div class="w-2.5 h-2.5 rounded-full bg-primary-container"></div><span class="font-headline-sm text-headline-sm uppercase text-on-surface tracking-wider font-bold">Umbrella Admin</span></div><div class="px-space-md py-space-xs"><div class="px-space-sm py-1 bg-surface-container-low rounded-lg text-on-surface-variant font-label-sm text-label-sm uppercase flex items-center justify-between"><span>Sector: Global</span><span class="w-1.5 h-1.5 rounded-full bg-primary"></span></div></div><nav class="flex flex-col gap-1 p-space-sm mt-space-xs" data-active-classes="bg-primary-container text-on-primary font-label-lg rounded-lg"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="panel-de-control" href="#"><span class="material-symbols-outlined text-[18px]">grid_view</span><span>Panel de Control</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="instalaciones-y-sectores" href="#"><span class="material-symbols-outlined text-[18px]">domain</span><span>Instalaciones y Sectores</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm transition-all bg-primary-container text-on-primary font-label-lg rounded-lg" data-path="usuarios-y-permisos" href="#"><span class="material-symbols-outlined text-[18px]">manage_accounts</span><span>Usuarios y Permisos</span></a></nav></div><div class="p-space-sm bg-surface-container-low"><div class="px-space-sm py-space-xs mb-space-xs"><p class="font-label-md text-label-md text-on-surface font-semibold truncate">Lic. A. Ashford</p><p class="font-label-sm text-label-sm text-on-surface-variant uppercase truncate">Administrador General</p></div><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-highest hover:text-on-surface transition-colors" data-path="login" href="#"><span class="material-symbols-outlined text-[18px]">logout</span><span>Cerrar Sesión</span></a></div></aside><div class="pl-64 flex flex-col min-h-screen"><header class="fixed top-0 left-64 right-0 h-14 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40"><div class="w-full h-14 px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-md"><span class="font-label-lg text-label-lg uppercase tracking-wide text-on-surface">UMBRELLA ACCESS // PANEL DE ADMINISTRACIÓN</span><span class="px-space-sm py-0.5 bg-surface-container-high text-primary font-label-sm text-label-sm uppercase rounded">SISTEMA ACTIVO // MODO ADMINISTRADOR</span></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm uppercase bg-surface-container-low px-space-sm py-1 rounded"><span class="material-symbols-outlined text-[16px]">corporate_fare</span><span>Instalación Central</span></div><div class="flex items-center gap-space-sm pl-space-sm"><div class="text-right hidden md:block"><div class="font-label-sm text-label-sm text-on-surface uppercase">Lic. A. Ashford</div><div class="font-label-sm text-label-sm text-on-surface-variant">Admin General</div></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/ALJJyrDC5hcqQGmA7IYYgbNtM-Ku7tVX4xHFw6BosPxr355SJ__20LajBKWndvivqy40psQqIzdPZnFnsA62ezlu1IZrhLWCRdLP5xbFPZObmsbMkdVgDeeE6Rm9Ip1VxfKmeC04A05oZg9Wjjzp6pNhPa0NqNLQpwGU0lXWsg57urerKP7BrwDyvngwcvoQn4Yj6s3TthEQb_KvOqeP9QTdI3ZHLa21iwDYcVQA6EaCQepFRkbKPf3LKzmigQg"/></div></div></div></header><main class="w-full pt-14 px-space-lg bg-surface flex-1"><div class="flex flex-col w-full">
+<div class="flex flex-col gap-space-lg py-space-md">
+<!-- Encabezado Interno y Acción Primaria -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<div class="flex items-center gap-space-xs text-primary font-label-sm text-label-sm uppercase tracking-wider">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span>Protocolo Umbrella Access // Directorio Corporativo</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface">Gestión de Usuarios y Autorizaciones</h1>
+<p class="font-body-md text-body-md text-secondary">Control de perfiles de acceso corporativo, asignación de niveles de autorización y sectores habilitados para personal, visitantes y proveedores.</p>
+</div>
+<div class="flex items-center shrink-0">
+<button class="inline-flex items-center justify-center gap-space-xs bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg px-space-md py-2.5 rounded-lg shadow-sm transition-colors duration-150" type="button">
+<span class="material-symbols-outlined text-[18px]">person_add</span>
+<span>+ Registrar Nuevo Usuario</span>
+</button>
+</div>
+</div>
+<!-- Barra de Filtros y Búsqueda -->
+<div class="flex flex-col gap-space-md bg-surface-container-lowest p-space-md rounded-xl shadow-sm">
+<!-- Pestañas de Tipo de Usuario -->
+<div class="flex flex-wrap items-center gap-space-xs bg-surface-container-low p-1 rounded-lg">
+<button class="px-space-md py-1.5 rounded-lg font-label-lg text-label-lg bg-surface-container-lowest text-primary shadow-sm font-semibold transition-all" type="button">
+          Todos (124)
+        </button>
+<button class="px-space-md py-1.5 rounded-lg font-label-lg text-label-lg text-secondary hover:text-on-surface hover:bg-surface-container-high transition-all" type="button">
+          Empleados (82)
+        </button>
+<button class="px-space-md py-1.5 rounded-lg font-label-lg text-label-lg text-secondary hover:text-on-surface hover:bg-surface-container-high transition-all" type="button">
+          Visitantes (26)
+        </button>
+<button class="px-space-md py-1.5 rounded-lg font-label-lg text-label-lg text-secondary hover:text-on-surface hover:bg-surface-container-high transition-all" type="button">
+          Proveedores (16)
+        </button>
+</div>
+<!-- Buscador y Selectores -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-sm items-center">
+<!-- Campo Buscador -->
+<div class="md:col-span-6 relative">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-secondary text-[20px] pointer-events-none">search</span>
+<input class="w-full h-10 pl-10 pr-space-md bg-surface-container-low text-on-surface placeholder:text-secondary rounded-lg font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary-container transition-all" placeholder="Buscar por nombre, documento o ID corporativo..." type="text"/>
+</div>
+<!-- Filtro Nivel -->
+<div class="md:col-span-3">
+<div class="relative">
+<select class="w-full h-10 px-space-md bg-surface-container-low text-on-surface rounded-lg font-label-lg text-label-lg appearance-none cursor-pointer focus:outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary-container">
+<option value="">Nivel: Todos los niveles</option>
+<option value="1">Nivel 1</option>
+<option value="2">Nivel 2</option>
+<option value="3">Nivel 3</option>
+<option value="4">Nivel 4</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-2.5 text-secondary text-[20px] pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Filtro Estado -->
+<div class="md:col-span-3">
+<div class="relative">
+<select class="w-full h-10 px-space-md bg-surface-container-low text-on-surface rounded-lg font-label-lg text-label-lg appearance-none cursor-pointer focus:outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary-container">
+<option value="">Estado: Todos</option>
+<option value="activo">Activo</option>
+<option value="suspendido">Suspendido</option>
+<option value="revision">Pendiente de Aprobación</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-2.5 text-secondary text-[20px] pointer-events-none">expand_more</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Tabla Principal de Usuarios y Permisos -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-secondary font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-space-sm px-space-md" scope="col">Usuario e Identificación</th>
+<th class="py-space-sm px-space-md" scope="col">Tipo</th>
+<th class="py-space-sm px-space-md" scope="col">Nivel de Autorización</th>
+<th class="py-space-sm px-space-md" scope="col">Sectores Habilitados</th>
+<th class="py-space-sm px-space-md" scope="col">Estado</th>
+<th class="py-space-sm px-space-md text-right" scope="col">Acciones</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-high font-body-md text-body-md text-on-surface">
+<!-- Fila 1: Dr. Marcus Vance -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center font-label-lg text-label-lg font-semibold text-primary">
+                    MV
+                  </div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Dr. Marcus Vance</span>
+<span class="font-label-sm text-label-sm text-secondary">#UC-8842-BIO • Investigador Titular</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center px-2 py-0.5 rounded font-label-sm text-label-sm uppercase bg-surface-container-high text-on-surface-variant font-medium">
+                  Empleado
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-secondary-container text-on-secondary-fixed font-label-md text-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                  Nivel 3 - Confidencial
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-wrap gap-1">
+<span class="px-2 py-0.5 bg-surface-container-low rounded font-body-sm text-body-sm text-on-surface">Lab. Síntesis Genética B</span>
+<span class="px-2 py-0.5 bg-surface-container-low rounded font-body-sm text-body-sm text-on-surface">Archivo Central</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded font-label-md text-label-md uppercase bg-surface-container-high text-on-surface font-semibold">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+                  Activo
+                </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="inline-flex items-center gap-space-xs">
+<button class="px-space-sm py-1.5 bg-surface-container-low hover:bg-surface-container-high text-on-surface font-label-lg text-label-lg rounded transition-colors" type="button">
+                    Modificar Autorización
+                  </button>
+<button class="p-1.5 bg-surface-container-low hover:bg-surface-container-high text-secondary hover:text-on-surface rounded transition-colors" title="Ver Historial" type="button">
+<span class="material-symbols-outlined text-[18px]">history</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Fila 2: Oficial Jill Valentine -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center font-label-lg text-label-lg font-semibold text-tertiary">
+                    JV
+                  </div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Oficial Jill Valentine</span>
+<span class="font-label-sm text-label-sm text-secondary">#UC-1014-SEC • Personal de Seguridad</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center px-2 py-0.5 rounded font-label-sm text-label-sm uppercase bg-surface-container-high text-on-surface-variant font-medium">
+                  Seguridad
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-secondary-container text-on-secondary-fixed font-label-md text-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                  Nivel 3 - Control de Acceso
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-wrap gap-1">
+<span class="px-2 py-0.5 bg-surface-container-low rounded font-body-sm text-body-sm text-on-surface">Puestos de Guardia B-1/B-3</span>
+<span class="px-2 py-0.5 bg-surface-container-low rounded font-body-sm text-body-sm text-on-surface">Esclusas de Acceso General</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded font-label-md text-label-md uppercase bg-surface-container-high text-on-surface font-semibold">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+                  Activo
+                </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="inline-flex items-center gap-space-xs">
+<button class="px-space-sm py-1.5 bg-surface-container-low hover:bg-surface-container-high text-on-surface font-label-lg text-label-lg rounded transition-colors" type="button">
+                    Modificar Autorización
+                  </button>
+<button class="p-1.5 bg-surface-container-low hover:bg-surface-container-high text-secondary hover:text-on-surface rounded transition-colors" title="Ver Historial" type="button">
+<span class="material-symbols-outlined text-[18px]">history</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Fila 3: Elena Rostova -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center font-label-lg text-label-lg font-semibold text-secondary">
+                    ER
+                  </div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Elena Rostova</span>
+<span class="font-label-sm text-label-sm text-secondary">#PROV-9041-CRIO • Suministros Criogénicos</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center px-2 py-0.5 rounded font-label-sm text-label-sm uppercase bg-surface-container-high text-on-surface-variant font-medium">
+                  Proveedor
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-primary-fixed text-on-primary-fixed font-label-md text-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                  Nivel 4 - Especial
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-wrap gap-1">
+<span class="px-2 py-0.5 bg-surface-container-low rounded font-body-sm text-body-sm text-on-surface">Subnivel -6 Criocámaras</span>
+<span class="px-2 py-0.5 bg-surface-container-low rounded font-body-sm text-body-sm text-on-surface">Plataforma de Descarga</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded font-label-md text-label-md uppercase bg-surface-container-high text-secondary font-semibold">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                  En Revisión
+                </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="inline-flex items-center gap-space-xs">
+<button class="px-space-sm py-1.5 bg-surface-container-low hover:bg-surface-container-high text-on-surface font-label-lg text-label-lg rounded transition-colors" type="button">
+                    Modificar Autorización
+                  </button>
+<button class="p-1.5 bg-surface-container-low hover:bg-surface-container-high text-secondary hover:text-on-surface rounded transition-colors" title="Ver Historial" type="button">
+<span class="material-symbols-outlined text-[18px]">history</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Fila 4: Dr. Albert Wesker -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center font-label-lg text-label-lg font-semibold text-primary">
+                    AW
+                  </div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Dr. Albert Wesker</span>
+<span class="font-label-sm text-label-sm text-secondary">#UC-0001-DIR • Auditor Corporativo</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center px-2 py-0.5 rounded font-label-sm text-label-sm uppercase bg-surface-container-high text-on-surface-variant font-medium">
+                  Visitante
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-primary-fixed text-on-primary-fixed font-label-md text-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                  Nivel 4 - Ejecutivo
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-2 py-0.5 bg-primary-fixed-dim/30 text-primary rounded font-label-sm text-label-sm uppercase font-semibold">
+                  Todos los sectores Arklay y Spencer
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded font-label-md text-label-md uppercase bg-surface-container-high text-on-surface font-semibold">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+                  Activo
+                </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="inline-flex items-center gap-space-xs">
+<button class="px-space-sm py-1.5 bg-surface-container-low hover:bg-surface-container-high text-on-surface font-label-lg text-label-lg rounded transition-colors" type="button">
+                    Modificar Autorización
+                  </button>
+<button class="p-1.5 bg-surface-container-low hover:bg-surface-container-high text-secondary hover:text-on-surface rounded transition-colors" title="Ver Historial" type="button">
+<span class="material-symbols-outlined text-[18px]">history</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Fila 5: Carlos Oliveira -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center font-label-lg text-label-lg font-semibold text-secondary">
+                    CO
+                  </div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Carlos Oliveira</span>
+<span class="font-label-sm text-label-sm text-secondary">#UC-5520-MANT • Mantenimiento Técnico</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center px-2 py-0.5 rounded font-label-sm text-label-sm uppercase bg-surface-container-high text-on-surface-variant font-medium">
+                  Empleado
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-label-md text-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  Nivel 2 - Técnico
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-wrap gap-1">
+<span class="px-2 py-0.5 bg-surface-container-low rounded font-body-sm text-body-sm text-on-surface">Hangares 01 y 02</span>
+<span class="px-2 py-0.5 bg-surface-container-low rounded font-body-sm text-body-sm text-on-surface">Subestaciones de Mantenimiento</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded font-label-md text-label-md uppercase bg-surface-container-high text-on-surface font-semibold">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+                  Activo
+                </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="inline-flex items-center gap-space-xs">
+<button class="px-space-sm py-1.5 bg-surface-container-low hover:bg-surface-container-high text-on-surface font-label-lg text-label-lg rounded transition-colors" type="button">
+                    Modificar Autorización
+                  </button>
+<button class="p-1.5 bg-surface-container-low hover:bg-surface-container-high text-secondary hover:text-on-surface rounded transition-colors" title="Ver Historial" type="button">
+<span class="material-symbols-outlined text-[18px]">history</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Fila 6: Dra. Rebecca Chambers -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center font-label-lg text-label-lg font-semibold text-secondary">
+                    RC
+                  </div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Dra. Rebecca Chambers</span>
+<span class="font-label-sm text-label-sm text-secondary">#VIS-3312-MED • Asesora Médica</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center px-2 py-0.5 rounded font-label-sm text-label-sm uppercase bg-surface-container-high text-on-surface-variant font-medium">
+                  Visitante
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-secondary-container text-on-secondary-fixed font-label-md text-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                  Nivel 3 - Temporal
+                </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-wrap gap-1">
+<span class="px-2 py-0.5 bg-surface-container-low rounded font-body-sm text-body-sm text-on-surface">Pabellón Médico Central</span>
+<span class="px-2 py-0.5 bg-surface-container-low rounded font-body-sm text-body-sm text-on-surface">Farmacología de Enlace</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded font-label-md text-label-md uppercase bg-surface-container-high text-secondary font-semibold">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                  En Revisión
+                </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="inline-flex items-center gap-space-xs">
+<button class="px-space-sm py-1.5 bg-surface-container-low hover:bg-surface-container-high text-on-surface font-label-lg text-label-lg rounded transition-colors" type="button">
+                    Modificar Autorización
+                  </button>
+<button class="p-1.5 bg-surface-container-low hover:bg-surface-container-high text-secondary hover:text-on-surface rounded transition-colors" title="Ver Historial" type="button">
+<span class="material-symbols-outlined text-[18px]">history</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Paginación Simple -->
+<div class="flex items-center justify-between px-space-md py-space-sm bg-surface-container-lowest">
+<span class="font-body-sm text-body-sm text-secondary">
+          Mostrando 6 de 124 registros autorizados
+        </span>
+<div class="flex items-center gap-1">
+<button class="px-3 py-1 bg-surface-container-low hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm rounded transition-colors" type="button">Anterior</button>
+<span class="px-2 py-1 font-label-sm text-label-sm text-primary font-bold">1</span>
+<button class="px-3 py-1 bg-surface-container-low hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm rounded transition-colors" type="button">Siguiente</button>
+</div>
+</div>
+</div>
+<!-- Tarjeta Informativa de Política de Concesión -->
+<div class="flex flex-col md:flex-row items-start gap-space-md bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="w-10 h-10 rounded bg-primary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-[24px]">verified_user</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Política Corporativa de Concesión de Permisos</span>
+<span class="px-2 py-0.5 bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm uppercase rounded">Directiva UC-POL-88</span>
+</div>
+<p class="font-body-md text-body-md text-secondary">
+          La asignación y modificación de autorizaciones dentro del sistema Umbrella Access se rige por un esquema de control de acceso basado en roles (RBAC) y validación estricta de credenciales de usuario y contraseña corporativa. Cada nivel define de forma taxativa el perímetro de sectores físicos y lógicos permitidos. Toda elevación a Nivel 4 requiere ratificación de la Dirección de Seguridad y auditoría de credenciales activas.
+        </p>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

@@ -1,0 +1,365 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "status-authorized": "#16A34A", "text-secondary": "#667085", "text-primary": "#1A1D24", "status-denied": "#DC2626", "text-muted": "#667085", "border-strong": "#D1D5DB", "border-subtle": "#E5E7EB", "primary": "#C8102E", "primary-container": "#C8102E", "surface-base": "#FFFFFF", "surface-secondary": "#F5F6F8", "clearance-l3": "#D97706" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.375rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-2xl": "3rem", "space-sm": "0.5rem", "gutter-lg": "1.5rem", "space-md": "1rem", "space-xs": "0.25rem", "margin-lg": "2rem", "space-xl": "2rem", "space-lg": "1.5rem", "gutter": "1rem", "margin": "1.5rem" }, "fontFamily": { "headline-md": ["Inter"], "headline-xl": ["Inter"], "headline-sm": ["Inter"], "body-md": ["Inter"], "headline-lg": ["Inter"], "body-lg": ["Inter"], "data-mono": ["monospace"], "body-sm": ["Inter"], "label-lg": ["Inter"], "label-md": ["Inter"], "label-sm": ["Inter"] }, "fontSize": { "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-xl": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-sm": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }], "data-mono": ["13px", { "lineHeight": "18px", "letterSpacing": "0.05em", "fontWeight": "500" }], "body-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "500" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "600" }] } } } };</script></head><body class="bg-surface-secondary font-body-md text-text-primary antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-base z-50 flex flex-col justify-between border-r border-border-subtle"><div class="flex flex-col"><div class="p-space-md border-b border-border-subtle flex flex-col gap-space-xs"><div class="flex items-center gap-space-sm"><img alt="Umbrella Corporation Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGimfFd5gd0OVVilLk0XA12lN2P2eCSXwN9_CkZ2niig1_-1zqvALEL3CkMtdb_x45yyWmZ6Ahz0P0mTmaGACSGwiboryUfmtdlQKHzTEtRMpf0Q_PhTc3DqyuPnXxDWKzIiNDv9pzMIjUcj4cfGttIbdjDfaSkU3Hb76MrhoBamniGnZG0djoXHTQjvuvUWAblI9BpUycC-yfb8Xn099qeHvm7YBtq5GjTvy7K96fojzWBTYA88OOFOu_AMvhJh0_Ow"><div class="flex flex-col"><span class="font-label-md text-text-primary font-bold uppercase tracking-wider">UMBRELLA ACCESS</span><span class="font-label-sm text-text-muted text-[10px] tracking-widest uppercase">SECURE INGRESS // L3</span></div></div><div class="mt-space-xs px-2 py-1 bg-surface-secondary border border-border-subtle rounded-DEFAULT flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-status-authorized animate-pulse"></span><span class="font-data-mono text-label-sm text-text-muted tracking-tight text-[10px]">NET v4.8 // ACTIVO</span></div></div><div class="px-space-md py-space-sm text-text-muted font-label-sm uppercase tracking-wider text-[10px] font-semibold">Módulos Operativos</div><nav class="flex flex-col gap-1 px-space-sm" data-active-classes="bg-surface-secondary text-primary border-l-2 border-primary font-headline-sm"><a class="flex items-center justify-between px-space-sm py-2 rounded-DEFAULT text-text-secondary hover:bg-surface-secondary hover:text-text-primary transition-colors font-label-md" data-path="panel-principal" href="{{DATA:SCREEN:SCREEN_14}}"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px] text-text-muted">dashboard</span><span>Panel Principal</span></div><span class="font-data-mono text-[10px] text-text-muted">#01</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-DEFAULT text-text-secondary hover:bg-surface-secondary hover:text-text-primary transition-colors font-label-md" data-path="solicitar-turno" href="{{DATA:SCREEN:SCREEN_12}}"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px] text-text-muted">add_task</span><span>Solicitar Turno</span></div><span class="font-data-mono text-[10px] text-text-muted">#02</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-DEFAULT bg-surface-secondary text-primary border-l-2 border-primary font-label-md font-semibold" data-path="mis-turnos" href="{{DATA:SCREEN:SCREEN_16}}"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px] text-primary">calendar_month</span><span>Mis Turnos</span></div><span class="font-data-mono text-[10px] text-primary">#03</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-DEFAULT text-text-secondary hover:bg-surface-secondary hover:text-text-primary transition-colors font-label-md" data-path="notificaciones-de-acceso" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px] text-text-muted">notifications</span><span>Notificaciones</span></div><span class="px-1.5 py-0.2 bg-primary text-white font-data-mono text-[10px] rounded-DEFAULT">3</span></a></nav></div><div class="p-space-md border-t border-border-subtle bg-surface-base flex flex-col gap-space-sm"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-DEFAULT bg-surface-secondary border border-border-subtle flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-text-secondary text-[20px]">biotech</span></div><div class="flex flex-col min-w-0 flex-1"><span class="font-label-md text-text-primary font-semibold truncate">Dr. Marcus Vance</span><span class="font-body-sm text-text-muted text-[11px] truncate">Investigador Biogenética</span><div class="mt-1 flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-clearance-l3"></span><span class="font-data-mono text-[10px] text-clearance-l3 font-semibold">CLEARANCE LVL 3</span></div></div></div><div class="flex items-center justify-between pt-space-xs border-t border-border-subtle"><span class="font-data-mono text-[10px] text-text-muted">#UC-8842-BIO</span><a class="text-status-denied hover:underline flex items-center gap-1 font-label-sm text-[11px]" data-path="inicio-de-sesion" href="{{DATA:SCREEN:SCREEN_18}}"><span class="material-symbols-outlined text-[14px]">logout</span><span>Cerrar</span></a></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-base/95 backdrop-blur-md border-b border-border-subtle z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-md"><img alt="Umbrella Corporation Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGimfFd5gd0OVVilLk0XA12lN2P2eCSXwN9_CkZ2niig1_-1zqvALEL3CkMtdb_x45yyWmZ6Ahz0P0mTmaGACSGwiboryUfmtdlQKHzTEtRMpf0Q_PhTc3DqyuPnXxDWKzIiNDv9pzMIjUcj4cfGttIbdjDfaSkU3Hb76MrhoBamniGnZG0djoXHTQjvuvUWAblI9BpUycC-yfb8Xn099qeHvm7YBtq5GjTvy7K96fojzWBTYA88OOFOu_AMvhJh0_Ow"><div class="flex items-center gap-2 text-text-muted font-label-sm uppercase tracking-wide"><span class="text-text-secondary font-label-md">Instalaciones Umbrella</span><span class="text-border-strong">/</span><span class="text-text-primary font-medium">Ingreso Operativo</span></div><div class="hidden xl:flex items-center gap-2 px-space-sm py-1 bg-surface-secondary border border-border-subtle rounded-DEFAULT"><span class="material-symbols-outlined text-text-muted text-[16px]">domain</span><span class="font-label-sm text-text-primary">Complejo Arklay // Lab NEST-2</span><span class="material-symbols-outlined text-text-muted text-[14px]">expand_more</span></div></div><div class="flex items-center gap-space-md"><div class="hidden md:flex flex-col items-end"><span class="font-data-mono text-label-sm text-text-primary tracking-wide font-medium">14:28:09 UTC-5</span><span class="font-label-sm text-status-authorized flex items-center gap-1 text-[10px] font-medium"><span class="w-1.5 h-1.5 rounded-full bg-status-authorized"></span>DEFCON-4 // REGULAR</span></div><div class="h-6 w-px bg-border-subtle hidden sm:block"></div><button class="relative p-1.5 rounded-DEFAULT text-text-secondary hover:bg-surface-secondary hover:text-text-primary transition-colors"><span class="material-symbols-outlined text-[20px]">tune</span></button><button class="relative p-1.5 rounded-DEFAULT text-text-secondary hover:bg-surface-secondary hover:text-text-primary transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-primary"></span></button><div class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center font-bold text-xs"><span class="material-symbols-outlined text-[18px]">person</span></div></div></header><main class="relative pt-16 bg-surface-secondary min-h-screen"><div class="flex flex-col w-full">
+<!-- Status & Environmental Monitor Strip -->
+<div class="w-full bg-surface-base border-b border-border-subtle px-margin-lg py-2 flex flex-wrap items-center justify-between text-text-muted font-data-mono text-label-sm">
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-amber-500 animate-ping"></span>
+<span class="text-text-primary font-medium">SISTEMA REASIGNACIÓN ACTIVO</span>
+</div>
+<span class="text-border-strong">//</span>
+<span>PROTOCOLO: SEC-MOD-084-TRANS</span>
+<span class="text-border-strong">//</span>
+<span class="text-clearance-l3 font-semibold">CLEARANCE LVL 3 REQUERIDO</span>
+</div>
+<div class="flex items-center gap-space-lg">
+<span class="text-text-muted">LATENCIA: <span class="text-status-authorized font-semibold">14ms</span></span>
+<span>CANAL CIFRADO: ARKLAY-NEST2-RELAY</span>
+</div>
+</div>
+<div class="p-margin-lg flex flex-col gap-space-xl">
+<!-- Migas de pan & Encabezado Operativo -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center gap-2 font-data-mono text-label-sm text-text-muted uppercase tracking-wider">
+<a class="hover:text-text-primary transition-colors" href="{{DATA:SCREEN:SCREEN_16}}">Mis Turnos</a>
+<span class="text-border-strong">/</span>
+<span class="text-text-secondary">TUR-2026-0941</span>
+<span class="text-border-strong">/</span>
+<span class="text-primary font-semibold">Reprogramar Acceso</span>
+</div>
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-sm">
+<span class="px-2 py-0.5 bg-red-50 text-primary border-l-2 border-primary font-data-mono text-label-sm uppercase tracking-widest font-semibold">Procedimiento #REP-04</span>
+<span class="text-text-muted text-body-sm font-data-mono">REV: 2.18</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-text-primary mt-1 tracking-tight font-bold">
+            Reprogramación de Turno de Acceso
+          </h1>
+<p class="font-body-md text-text-secondary mt-1 max-w-3xl">
+            Seleccione una nueva fecha y franja horaria disponible para transferir su cupo reservado sin revocar credenciales de bio-seguridad.
+          </p>
+</div>
+<!-- Terminal Quick Stats Indicator -->
+<div class="flex items-center gap-space-md bg-white border border-border-subtle px-space-md py-2 rounded-DEFAULT shrink-0 shadow-sm">
+<div class="flex flex-col items-end">
+<span class="font-data-mono text-label-sm text-text-muted text-[10px] uppercase font-medium">VENTANA EXPIRA EN</span>
+<span class="font-data-mono text-headline-sm text-amber-600 font-bold">18:42 min</span>
+</div>
+<span class="material-symbols-outlined text-amber-500 text-[28px]">timer</span>
+</div>
+</div>
+</div>
+<!-- Comparador Visual Lado a Lado -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg items-start">
+<!-- Columna Izquierda: Turno Original Actual -->
+<div class="lg:col-span-5 flex flex-col bg-surface-base border border-border-subtle rounded-DEFAULT p-space-lg relative overflow-hidden shadow-sm">
+<!-- Visual Accent Corner Bracket -->
+<div class="absolute top-0 right-0 w-8 h-8 bg-surface-secondary border-b border-l border-border-subtle flex items-center justify-center pointer-events-none">
+<span class="material-symbols-outlined text-text-muted text-[14px]">lock</span>
+</div>
+<!-- Status Header -->
+<div class="flex items-center justify-between pb-space-md border-b border-border-subtle">
+<div class="flex flex-col">
+<span class="font-label-sm text-text-muted uppercase tracking-widest text-[10px] font-semibold">Registro Inicial</span>
+<span class="font-headline-sm text-text-primary font-bold">Turno Original Actual</span>
+</div>
+<span class="px-2.5 py-1 bg-green-50 text-status-authorized border border-green-200 font-data-mono text-label-sm tracking-wide rounded-DEFAULT flex items-center gap-1.5 font-semibold">
+<span class="w-2 h-2 rounded-full bg-status-authorized"></span>
+            VIGENTE
+          </span>
+</div>
+<!-- Spec Data Card Matrix -->
+<div class="mt-space-md flex flex-col gap-space-sm bg-surface-secondary border border-border-subtle p-space-md rounded-DEFAULT">
+<div class="flex justify-between items-center py-1 border-b border-border-subtle/60">
+<span class="font-label-md text-text-secondary">Código de Turno:</span>
+<span class="font-data-mono text-label-lg text-text-primary font-bold tracking-wider">#TUR-2026-0941</span>
+</div>
+<div class="flex flex-col py-1 border-b border-border-subtle/60">
+<span class="font-label-sm text-text-secondary font-medium">Instalación y Sector Asignado:</span>
+<div class="flex items-center gap-2 mt-0.5">
+<span class="material-symbols-outlined text-clearance-l3 text-[18px]">domain</span>
+<span class="font-label-md text-text-primary font-semibold">NEST-2 // Laboratorio de Síntesis Genética B</span>
+</div>
+<span class="font-data-mono text-body-sm text-text-muted text-[11px] ml-6">ZONA SUBTERRÁNEA NIVEL -04 // AIRE PRESURIZADO</span>
+</div>
+<div class="flex justify-between items-center py-1 border-b border-border-subtle/60">
+<span class="font-label-md text-text-secondary">Fecha Registrada:</span>
+<span class="font-label-md text-amber-700 font-semibold">Martes, 20 de Octubre de 2026</span>
+</div>
+<div class="flex justify-between items-center py-1 border-b border-border-subtle/60">
+<span class="font-label-md text-text-secondary">Franja Horaria Actual:</span>
+<span class="font-data-mono text-label-md text-text-primary bg-white border border-border-subtle px-2 py-0.5 rounded-DEFAULT font-medium">11:30 - 14:30 hs (3 horas)</span>
+</div>
+<div class="flex justify-between items-center py-1">
+<span class="font-label-md text-text-secondary">Titular de Operación:</span>
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-text-primary font-semibold">Dr. Marcus Vance</span>
+<span class="px-1.5 py-0.5 bg-amber-100 text-amber-800 border border-amber-200 font-data-mono text-label-sm font-semibold rounded-DEFAULT text-[10px]">NIVEL 3</span>
+</div>
+</div>
+</div>
+<!-- Security Schematic Visual Element -->
+<div class="mt-space-md bg-surface-secondary border border-border-subtle p-space-md rounded-DEFAULT flex flex-col gap-2">
+<div class="flex items-center justify-between text-text-muted text-label-sm font-data-mono text-[10px]">
+<span class="font-semibold text-text-secondary">NIVEL DE OCUPACIÓN HISTÓRICA DEL SECTOR</span>
+<span class="text-status-authorized font-bold">78% NOMINAL</span>
+</div>
+<!-- Sparkline SVG -->
+<div class="w-full h-10 flex items-end">
+<svg class="w-full h-full text-amber-600" fill="none" viewBox="0 0 300 40">
+<path d="M0,30 L30,28 L60,35 L90,15 L120,20 L150,10 L180,25 L210,12 L240,18 L270,8 L300,16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+<path d="M0,30 L30,28 L60,35 L90,15 L120,20 L150,10 L180,25 L210,12 L240,18 L270,8 L300,16 L300,40 L0,40 Z" fill="currentColor" fill-opacity="0.12"></path>
+</svg>
+</div>
+</div>
+<!-- Warning Disclaimer Box -->
+<div class="mt-space-md p-space-md bg-red-50 border border-red-200 text-red-900 rounded-DEFAULT flex gap-space-sm items-start">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">warning</span>
+<div class="flex flex-col gap-0.5">
+<span class="font-label-md font-bold text-primary">Liberación de Cupo Inmediata</span>
+<p class="font-body-sm text-red-800 leading-snug">
+              Al confirmar una nueva fecha, su cupo actual del 20 de Octubre quedará liberado automáticamente en el sistema central para otros investigadores autorizados.
+            </p>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between text-text-muted font-data-mono text-[11px] border-t border-border-subtle">
+<span>REGISTRO PROTOCOLAR: 0941-VC-NEST2</span>
+<span>SISTEMA AUDITABLE</span>
+</div>
+</div>
+<!-- Columna Derecha: Selección de Nueva Fecha y Horario (Panel Activo Umbrella) -->
+<div class="lg:col-span-7 flex flex-col bg-surface-base border border-border-subtle rounded-DEFAULT p-space-lg relative shadow-sm">
+<!-- Header con Identificador Rojo Umbrella -->
+<div class="flex items-center justify-between pb-space-md border-b border-border-subtle">
+<div class="flex items-center gap-space-sm">
+<div class="w-3 h-3 bg-primary rounded-DEFAULT"></div>
+<div>
+<span class="font-label-sm text-primary uppercase tracking-widest text-[10px] font-bold">Configuración de Traslado</span>
+<h2 class="font-headline-sm text-headline-sm text-text-primary font-bold">Selección de Nueva Fecha y Horario</h2>
+</div>
+</div>
+<span class="font-data-mono text-label-sm text-text-muted font-medium">DISPONIBILIDAD LIVE</span>
+</div>
+<div class="mt-space-md flex flex-col gap-space-lg">
+<!-- Selector Interactivo de Nueva Fecha -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-text-secondary uppercase tracking-wider flex items-center gap-1.5 text-[11px] font-semibold">
+<span class="material-symbols-outlined text-[16px] text-primary">calendar_today</span>
+<span>Semana de Operación: 21 al 28 de Octubre 2026</span>
+</label>
+<span class="font-data-mono text-label-sm text-primary font-bold">Seleccionado: Jueves, 22 de Octubre</span>
+</div>
+<!-- Date Selector Strip / Calendar Mini Grid -->
+<div class="grid grid-cols-4 sm:grid-cols-7 gap-2" id="date-selector-group">
+<!-- Mié 21 -->
+<button class="flex flex-col items-center justify-center p-2 rounded-DEFAULT bg-white border border-border-subtle hover:border-gray-400 hover:bg-surface-secondary transition-colors group" type="button">
+<span class="font-label-sm text-text-muted group-hover:text-text-primary text-[10px] uppercase font-semibold">MIÉ</span>
+<span class="font-headline-sm text-text-primary font-bold mt-0.5">21</span>
+<span class="w-1.5 h-1.5 rounded-full bg-status-authorized mt-1.5"></span>
+<span class="font-data-mono text-[9px] text-text-muted mt-0.5">2 Libres</span>
+</button>
+<!-- Jue 22 (SELECCIONADO) -->
+<button class="flex flex-col items-center justify-center p-2 rounded-DEFAULT bg-primary border border-primary text-white shadow-sm relative" type="button">
+<div class="absolute -top-1 -right-1 w-2 h-2 rounded-full bg-red-200 animate-pulse"></div>
+<span class="font-label-sm text-white text-[10px] font-bold uppercase">JUE</span>
+<span class="font-headline-sm text-white font-bold mt-0.5">22</span>
+<span class="w-1.5 h-1.5 rounded-full bg-white mt-1.5"></span>
+<span class="font-data-mono text-[9px] text-white mt-0.5 font-semibold">Activo</span>
+</button>
+<!-- Vie 23 -->
+<button class="flex flex-col items-center justify-center p-2 rounded-DEFAULT bg-white border border-border-subtle hover:border-gray-400 hover:bg-surface-secondary transition-colors group" type="button">
+<span class="font-label-sm text-text-muted group-hover:text-text-primary text-[10px] uppercase font-semibold">VIE</span>
+<span class="font-headline-sm text-text-primary font-bold mt-0.5">23</span>
+<span class="w-1.5 h-1.5 rounded-full bg-status-authorized mt-1.5"></span>
+<span class="font-data-mono text-[9px] text-text-muted mt-0.5">4 Libres</span>
+</button>
+<!-- Sáb 24 -->
+<button class="flex flex-col items-center justify-center p-2 rounded-DEFAULT bg-white border border-border-subtle hover:border-gray-400 hover:bg-surface-secondary transition-colors group" type="button">
+<span class="font-label-sm text-text-muted group-hover:text-text-primary text-[10px] uppercase font-semibold">SÁB</span>
+<span class="font-headline-sm text-text-primary font-bold mt-0.5">24</span>
+<span class="w-1.5 h-1.5 rounded-full bg-amber-500 mt-1.5"></span>
+<span class="font-data-mono text-[9px] text-text-muted mt-0.5">1 Libre</span>
+</button>
+<!-- Dom 25 (Sin operaciones) -->
+<button class="flex flex-col items-center justify-center p-2 rounded-DEFAULT bg-gray-50 border border-border-subtle opacity-50 cursor-not-allowed" disabled="" type="button">
+<span class="font-label-sm text-text-muted text-[10px] uppercase font-semibold">DOM</span>
+<span class="font-headline-sm text-text-muted mt-0.5">25</span>
+<span class="w-1.5 h-1.5 rounded-full bg-gray-400 mt-1.5"></span>
+<span class="font-data-mono text-[9px] text-text-muted mt-0.5">Manten.</span>
+</button>
+<!-- Lun 26 -->
+<button class="flex flex-col items-center justify-center p-2 rounded-DEFAULT bg-white border border-border-subtle hover:border-gray-400 hover:bg-surface-secondary transition-colors group" type="button">
+<span class="font-label-sm text-text-muted group-hover:text-text-primary text-[10px] uppercase font-semibold">LUN</span>
+<span class="font-headline-sm text-text-primary font-bold mt-0.5">26</span>
+<span class="w-1.5 h-1.5 rounded-full bg-status-authorized mt-1.5"></span>
+<span class="font-data-mono text-[9px] text-text-muted mt-0.5">6 Libres</span>
+</button>
+<!-- Mar 27 -->
+<button class="flex flex-col items-center justify-center p-2 rounded-DEFAULT bg-white border border-border-subtle hover:border-gray-400 hover:bg-surface-secondary transition-colors group" type="button">
+<span class="font-label-sm text-text-muted group-hover:text-text-primary text-[10px] uppercase font-semibold">MAR</span>
+<span class="font-headline-sm text-text-primary font-bold mt-0.5">27</span>
+<span class="w-1.5 h-1.5 rounded-full bg-status-authorized mt-1.5"></span>
+<span class="font-data-mono text-[9px] text-text-muted mt-0.5">5 Libres</span>
+</button>
+</div>
+</div>
+<!-- Franjas Horarias Disponibles -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-text-secondary uppercase tracking-wider flex items-center gap-1.5 text-[11px] font-semibold">
+<span class="material-symbols-outlined text-[16px] text-primary">schedule</span>
+<span>Franjas Horarias Disponibles (Jueves 22 Octubre)</span>
+</label>
+<span class="font-data-mono text-label-sm text-text-muted text-[11px]">DURACIÓN ESTÁNDAR: 3 HORAS</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm" id="slot-selector-container">
+<!-- Franja 1 -->
+<div class="p-space-md rounded-DEFAULT bg-white border border-border-subtle hover:border-gray-400 hover:bg-surface-secondary cursor-pointer transition-colors flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-data-mono text-label-lg font-bold text-text-primary">08:00 - 11:00 hs</span>
+<span class="px-2 py-0.5 bg-green-50 text-status-authorized border border-green-200 font-data-mono text-label-sm rounded-DEFAULT font-semibold">5 CUPOS</span>
+</div>
+<div class="mt-2 flex items-center justify-between">
+<span class="font-body-sm text-text-secondary">Turno Matutino I</span>
+<span class="material-symbols-outlined text-gray-400 text-[18px]">radio_button_unchecked</span>
+</div>
+</div>
+<!-- Franja 2 (SELECCIONADA) -->
+<div class="p-space-md rounded-DEFAULT bg-red-50/40 border-2 border-primary cursor-pointer shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-center justify-between">
+<span class="font-data-mono text-label-lg font-bold text-text-primary">11:30 - 14:30 hs</span>
+<span class="px-2 py-0.5 bg-primary text-white font-data-mono text-label-sm font-bold rounded-DEFAULT">SELECCIONADO</span>
+</div>
+<div class="mt-2 flex items-center justify-between">
+<span class="font-label-sm text-status-authorized flex items-center gap-1 font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-status-authorized"></span> 3 cupos disponibles
+                  </span>
+<span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+</div>
+<!-- Franja 3 (COMPLETO) -->
+<div class="p-space-md rounded-DEFAULT bg-gray-50 border border-border-subtle opacity-60 cursor-not-allowed flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-data-mono text-label-lg font-semibold text-text-muted line-through">15:00 - 18:00 hs</span>
+<span class="px-2 py-0.5 bg-red-50 text-status-denied border border-red-200 font-data-mono text-label-sm rounded-DEFAULT font-semibold">COMPLETO</span>
+</div>
+<div class="mt-2 flex items-center justify-between">
+<span class="font-body-sm text-text-muted">Capacidad máxima alcanzada</span>
+<span class="material-symbols-outlined text-status-denied text-[18px]">block</span>
+</div>
+</div>
+<!-- Franja 4 -->
+<div class="p-space-md rounded-DEFAULT bg-white border border-border-subtle hover:border-gray-400 hover:bg-surface-secondary cursor-pointer transition-colors flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-data-mono text-label-lg font-bold text-text-primary">18:30 - 21:30 hs</span>
+<span class="px-2 py-0.5 bg-green-50 text-status-authorized border border-green-200 font-data-mono text-label-sm rounded-DEFAULT font-semibold">8 CUPOS</span>
+</div>
+<div class="mt-2 flex items-center justify-between">
+<span class="font-body-sm text-text-secondary">Turno Nocturno I</span>
+<span class="material-symbols-outlined text-gray-400 text-[18px]">radio_button_unchecked</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Campos Obligatorios de Motivo y Justificación -->
+<div class="flex flex-col gap-space-md pt-space-xs">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-text-primary font-medium flex items-center justify-between">
+<span>Motivo formal de la reprogramación <span class="text-primary font-bold">*</span></span>
+<span class="font-data-mono text-label-sm text-text-muted text-[10px]">CÓDIGO AUDITORÍA OBLIGATORIO</span>
+</label>
+<div class="relative w-full">
+<select class="w-full bg-white text-text-primary font-body-md px-space-md py-2.5 rounded-DEFAULT border border-border-subtle appearance-none focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary shadow-sm">
+<option selected="">Demora en preparación de reactivos biológicos</option>
+<option>Mantenimiento correctivo de espectrómetro molecular</option>
+<option>Reprogramación de directiva de bioseguridad NEST</option>
+<option>Complicación en protocolo de incubación BSL-4</option>
+<option>Disponibilidad de equipo de asistencia técnica</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-3 text-text-muted pointer-events-none text-[18px]">unfold_more</span>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-text-primary font-medium flex items-center justify-between">
+<span>Observaciones adicionales de laboratorio</span>
+<span class="font-data-mono text-label-sm text-text-muted text-[10px]">CARACTERES: 63/300</span>
+</label>
+<textarea class="w-full bg-white text-text-primary font-body-md p-space-md rounded-DEFAULT border border-border-subtle focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary shadow-sm resize-none leading-relaxed" rows="3">Extensión de fase previa de incubación celular hasta el 22/10.</textarea>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Panel de Confirmación de Impacto -->
+<div class="w-full bg-sky-50/70 border border-border-subtle rounded-DEFAULT p-space-md flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-DEFAULT bg-white border border-border-subtle flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-status-authorized text-[22px]">verified_user</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-text-primary font-bold flex items-center gap-2">
+            Mantenimiento de Credenciales de Seguridad
+            <span class="px-2 py-0.2 bg-amber-100 text-amber-800 border border-amber-200 font-data-mono text-label-sm rounded-DEFAULT text-[10px] font-semibold">CLEARANCE L3 VALIDADO</span>
+</span>
+<p class="font-body-sm text-text-secondary mt-0.5">La reprogramación mantiene su nivel de autorización previo (Nivel 3). El ingreso se registrará manualmente por el oficial de guardia en el puesto de acceso.</p>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0 self-end md:self-auto font-data-mono text-label-sm text-text-secondary bg-white border border-border-subtle px-3 py-1.5 rounded-DEFAULT shadow-sm">
+<span class="w-2 h-2 rounded-full bg-status-authorized"></span>
+<span class="font-semibold text-text-primary">AUTO-APROBACIÓN EXPEDITA</span>
+</div>
+</div>
+<!-- Barra de Acciones en Pie de Página -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-sm pb-space-lg">
+<a href="{{DATA:SCREEN:SCREEN_10}}" class="w-full sm:w-auto px-space-lg py-2.5 rounded-DEFAULT bg-white border border-border-subtle text-text-primary hover:bg-surface-secondary hover:border-gray-400 transition-colors font-label-md flex items-center justify-center gap-2 shadow-sm font-medium"><span class="material-symbols-outlined text-[18px]">arrow_back</span><span>Descartar Cambios y Mantener Turno Original</span></a>
+<div class="flex items-center gap-space-md w-full sm:w-auto">
+<a href="{{DATA:SCREEN:SCREEN_10}}" id="btn-reprogramar" class="w-full sm:w-auto px-space-xl py-2.5 rounded-DEFAULT bg-primary text-white hover:bg-[#A80D26] transition-colors font-label-lg flex items-center justify-center gap-2 shadow font-bold tracking-wide cursor-pointer"><span class="material-symbols-outlined text-[20px] transition-transform duration-500 group-hover:rotate-180">sync</span><span>Confirmar Reprogramación de Turno</span></a>
+</div>
+</div>
+</div>
+<!-- Notification Toast Container (Interactions) -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none bg-white border border-border-subtle p-space-md rounded-DEFAULT shadow-xl flex items-center gap-space-md" id="toast-success">
+<div class="w-8 h-8 rounded-DEFAULT bg-green-100 text-status-authorized flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">check</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-text-primary font-bold">Turno Actualizado con Éxito</span>
+<span class="font-data-mono text-body-sm text-text-muted">Nuevo Token emitido: #TUR-2026-0941-R1</span>
+</div>
+</div>
+</div>
+<script>
+  // Simple interaction behavior
+  document.addEventListener('DOMContentLoaded', () => {
+    const confirmBtn = document.getElementById('btn-reprogramar');
+    const toast = document.getElementById('toast-success');
+
+    if (confirmBtn && toast) {
+      confirmBtn.addEventListener('click', () => {
+        confirmBtn.disabled = true;
+        confirmBtn.innerHTML = `
+          <span class="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></span>
+          <span>Procesando Reasignación...</span>
+        `;
+
+        setTimeout(() => {
+          toast.classList.remove('translate-y-24', 'opacity-0');
+          toast.classList.add('translate-y-0', 'opacity-100');
+          
+          setTimeout(() => {
+            window.location.hash = '#mis-turnos';
+          }, 1800);
+        }, 800);
+      });
+    }
+  });
+</script></main></div>
+
+
+
+
+
+</body></html>

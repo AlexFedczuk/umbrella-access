@@ -1,0 +1,492 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-surface-variant": "#5c403f", "on-primary-container": "#ffdad8", "on-primary": "#ffffff", "primary-fixed": "#ffdad8", "on-tertiary-container": "#d9e3fb", "on-tertiary-fixed": "#111c2d", "on-error-container": "#93000a", "on-secondary-fixed-variant": "#44474f", "inverse-primary": "#ffb3b1", "on-error": "#ffffff", "surface-dim": "#d9dadc", "on-surface": "#191c1e", "error-container": "#ffdad6", "secondary": "#5c5e66", "on-secondary-container": "#62646d", "tertiary-fixed": "#d9e3fb", "inverse-surface": "#2e3132", "primary": "#9e001f", "on-primary-fixed-variant": "#92001c", "on-primary-fixed": "#410007", "primary-container": "#c8102e", "tertiary-container": "#5b657a", "primary-fixed-dim": "#ffb3b1", "on-secondary": "#ffffff", "surface-container": "#edeef0", "error": "#ba1a1a", "secondary-container": "#e0e2ec", "surface-bright": "#f8f9fb", "surface-container-high": "#e7e8ea", "surface-container-highest": "#e1e2e4", "surface-variant": "#e1e2e4", "on-tertiary-fixed-variant": "#3d475a", "on-tertiary": "#ffffff", "tertiary": "#434d61", "secondary-fixed": "#e0e2ec", "on-background": "#191c1e", "surface-container-lowest": "#ffffff", "surface": "#f8f9fb", "outline-variant": "#e5bdbb", "inverse-on-surface": "#f0f1f3", "outline": "#906f6e", "surface-tint": "#bf0229", "tertiary-fixed-dim": "#bdc7de", "on-secondary-fixed": "#191c22", "secondary-fixed-dim": "#c4c6d0", "background": "#f8f9fb", "surface-container-low": "#f3f4f6" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-lg": "1.5rem", "space-2xl": "3rem", "margin-desktop": "2rem", "space-sm": "0.5rem", "gutter": "1rem", "space-xl": "2rem", "gutter-desktop": "1.5rem", "margin": "1rem", "space-xs": "0.25rem", "space-md": "1rem" }, "fontFamily": { "label-sm": ["Inter"], "display-lg-mobile": ["Inter"], "display-lg": ["Inter"], "body-md": ["Inter"], "label-lg": ["Inter"], "headline-lg": ["Inter"], "headline-sm": ["Inter"], "headline-md": ["Inter"], "label-md": ["Inter"], "body-sm": ["Inter"], "body-lg": ["Inter"] }, "fontSize": { "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "700" }], "display-lg-mobile": ["26px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "display-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0", "fontWeight": "400" }], "label-lg": ["13px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "headline-sm": ["16px", { "lineHeight": "24px", "letterSpacing": "0", "fontWeight": "600" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-md": ["11px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0", "fontWeight": "400" }], "body-lg": ["15px", { "lineHeight": "22px", "letterSpacing": "0", "fontWeight": "400" }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col"><div class="h-14 px-space-md flex items-center gap-space-sm bg-surface-container-lowest"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBY1e47y9_fjP2oey9gX9_9-ADIxfrTl8Y9W_Kmh7NG0ueDSbBGMAk0OdZj_mJf_JAkyGsQ-_UOPMaAirAyE_pnRstUtE4AXY3WwcKr52T6wm9g3Q-9pLiXPJpaF5pVe95LsNouT5MU4gF18BM239ebY4uhZ19eYtHCpWYy8cdUM2Ta3RVw96r-iBiTvZnR-y7B7YSy4L3lOWv4qm_E-g7xMv4M4vSPSHw2ccuBYJulhVSYm62EYwBH" alt="Umbrella Logo" class="w-6 h-6 object-contain shrink-0"><span class="font-headline-sm text-headline-sm uppercase text-on-surface tracking-wider font-bold">Umbrella Admin</span></div><div class="px-space-md py-space-xs"><div class="px-space-sm py-1 bg-surface-container-low rounded-lg text-on-surface-variant font-label-sm text-label-sm uppercase flex items-center justify-between"><span>Sector: Global</span><span class="w-1.5 h-1.5 rounded-full bg-primary"></span></div></div><nav class="flex flex-col gap-1 p-space-sm mt-space-xs" data-active-classes="bg-primary-container text-on-primary font-label-lg rounded-lg"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="panel-de-control" href="#"><span class="material-symbols-outlined text-[18px]">grid_view</span><span>Panel de Control</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm transition-all bg-primary-container text-on-primary font-label-lg rounded-lg" data-path="instalaciones-y-sectores" href="#"><span class="material-symbols-outlined text-[18px]">domain</span><span>Instalaciones y Sectores</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="usuarios-y-permisos" href="#"><span class="material-symbols-outlined text-[18px]">manage_accounts</span><span>Usuarios y Permisos</span></a></nav></div><div class="p-space-sm bg-surface-container-low"><div class="px-space-sm py-space-xs mb-space-xs"><p class="font-label-md text-label-md text-on-surface font-semibold truncate">Lic. A. Ashford</p><p class="font-label-sm text-label-sm text-on-surface-variant uppercase truncate">Administrador General</p></div><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-highest hover:text-on-surface transition-colors" data-path="login" href="#"><span class="material-symbols-outlined text-[18px]">logout</span><span>Cerrar Sesión</span></a></div></aside><div class="pl-64 flex flex-col min-h-screen"><header class="fixed top-0 left-64 right-0 h-14 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40"><div class="w-full h-14 px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-md"><span class="font-label-lg text-label-lg uppercase tracking-wide text-on-surface">UMBRELLA ACCESS // PANEL DE ADMINISTRACIÓN</span><span class="px-space-sm py-0.5 bg-surface-container-high text-primary font-label-sm text-label-sm uppercase rounded">SISTEMA ACTIVO // MODO ADMINISTRADOR</span></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm uppercase bg-surface-container-low px-space-sm py-1 rounded"><span class="material-symbols-outlined text-[16px]">corporate_fare</span><span>Instalación Central</span></div><div class="flex items-center gap-space-sm pl-space-sm"><div class="text-right hidden md:block"><div class="font-label-sm text-label-sm text-on-surface uppercase">Lic. A. Ashford</div><div class="font-label-sm text-label-sm text-on-surface-variant">Admin General</div></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/ALJJyrDC5hcqQGmA7IYYgbNtM-Ku7tVX4xHFw6BosPxr355SJ__20LajBKWndvivqy40psQqIzdPZnFnsA62ezlu1IZrhLWCRdLP5xbFPZObmsbMkdVgDeeE6Rm9Ip1VxfKmeC04A05oZg9Wjjzp6pNhPa0NqNLQpwGU0lXWsg57urerKP7BrwDyvngwcvoQn4Yj6s3TthEQb_KvOqeP9QTdI3ZHLa21iwDYcVQA6EaCQepFRkbKPf3LKzmigQg"></div></div></div></header><main class="w-full pt-14 px-space-lg bg-surface flex-1"><div class="flex flex-col w-full">
+<div class="py-space-md flex flex-col md:flex-row md:items-end justify-between gap-space-md border-b border-surface-container-highest">
+<div>
+<div class="flex items-center gap-space-xs text-primary font-label-sm text-label-sm uppercase tracking-wider mb-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+<span>Módulo de Control de Infraestructura</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface uppercase tracking-tight">Gestión de Instalaciones y Sectores</h1>
+<p class="font-body-md text-body-md text-secondary mt-0.5">Administración de capacidades máximas, horarios habilitados y requisitos de nivel de autorización por sector.</p>
+</div>
+<div class="flex items-center gap-space-sm self-start md:self-auto shrink-0">
+
+<button class="px-space-md py-2 bg-primary-container text-on-primary font-label-lg text-label-lg rounded shadow-sm hover:bg-primary transition-colors flex items-center gap-1.5" id="btn-create-sector" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>+ Crear Nuevo Sector</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md my-space-lg">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm border border-surface-container-high flex flex-col justify-between hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="absolute top-0 left-0 w-1 h-full bg-primary-container"></div>
+<div>
+<div class="flex items-center justify-between gap-2 mb-2">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary-container text-[18px]">domain</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Instalación Principal</span>
+</div>
+<span class="px-2 py-0.5 bg-surface-container text-on-surface font-label-sm text-label-sm uppercase rounded">Operativo</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Complejo Arklay // NEST-2</h3>
+<p class="font-body-sm text-body-sm text-secondary mt-0.5">5 sectores configurados • 18 puntos de control</p>
+</div>
+<div class="mt-space-md pt-space-sm border-t border-surface-container-high">
+<div class="flex justify-between items-center text-label-sm font-label-sm text-on-surface mb-1.5">
+<span class="text-secondary">Ocupación global acumulada</span>
+<span class="font-semibold text-on-surface">68% <span class="text-secondary font-normal">(112/165)</span></span>
+</div>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 68%;"></div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm border border-surface-container-high flex flex-col justify-between hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="absolute top-0 left-0 w-1 h-full bg-tertiary"></div>
+<div>
+<div class="flex items-center justify-between gap-2 mb-2">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary text-[18px]">location_city</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Instalación Secundaria</span>
+</div>
+<span class="px-2 py-0.5 bg-surface-container text-on-surface font-label-sm text-label-sm uppercase rounded">Operativo</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Centro de Ensayos Terrestres</h3>
+<p class="font-body-sm text-body-sm text-secondary mt-0.5">3 sectores configurados • 9 puntos de control</p>
+</div>
+<div class="mt-space-md pt-space-sm border-t border-surface-container-high">
+<div class="flex justify-between items-center text-label-sm font-label-sm text-on-surface mb-1.5">
+<span class="text-secondary">Ocupación global acumulada</span>
+<span class="font-semibold text-on-surface">45% <span class="text-secondary font-normal">(45/100)</span></span>
+</div>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-tertiary rounded-full" style="width: 45%;"></div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm border border-surface-container-high flex flex-col justify-between hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="absolute top-0 left-0 w-1 h-full bg-error"></div>
+<div>
+<div class="flex items-center justify-between gap-2 mb-2">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-error text-[18px]">warning</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-error">Alerta de Capacidad</span>
+</div>
+<span class="px-2 py-0.5 bg-error-container text-on-error-container font-label-sm text-label-sm uppercase rounded font-semibold">Restricción</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Laboratorio Spencer</h3>
+<p class="font-body-sm text-body-sm text-secondary mt-0.5">2 sectores configurados • Alta seguridad</p>
+</div>
+<div class="mt-space-md pt-space-sm border-t border-surface-container-high">
+<div class="flex justify-between items-center text-label-sm font-label-sm text-on-surface mb-1.5">
+<span class="text-secondary">Ocupación global acumulada</span>
+<span class="font-semibold text-error">90% Crítico <span class="text-secondary font-normal">(36/40)</span></span>
+</div>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-error rounded-full" style="width: 90%;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm border border-surface-container-high flex flex-col lg:flex-row lg:items-center justify-between gap-space-md mb-space-md">
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="relative min-w-[240px]">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-secondary text-[18px]">search</span>
+<input class="w-full pl-9 pr-3 py-1.5 bg-surface-container-low text-on-surface font-body-sm text-body-sm rounded border border-transparent focus:border-primary-container focus:bg-surface-container-lowest outline-none transition-all placeholder:text-secondary" placeholder="Buscar por sector o código..." type="text">
+</div>
+<div class="relative">
+<select class="appearance-none bg-surface-container-low text-on-surface font-label-md text-label-md uppercase tracking-wider pl-3 pr-8 py-2 rounded border border-transparent hover:bg-surface-container focus:border-primary-container outline-none cursor-pointer">
+<option>Todas las Instalaciones</option>
+<option>Complejo Arklay // NEST-2</option>
+<option>Centro de Ensayos Terrestres</option>
+<option>Laboratorio Spencer</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-2 pointer-events-none text-secondary text-[18px]">expand_more</span>
+</div>
+<div class="relative">
+<select class="appearance-none bg-surface-container-low text-on-surface font-label-md text-label-md uppercase tracking-wider pl-3 pr-8 py-2 rounded border border-transparent hover:bg-surface-container focus:border-primary-container outline-none cursor-pointer">
+<option>Nivel Autorización (Todos)</option>
+<option>Nivel 2 - Estándar</option>
+<option>Nivel 3 - Restringido</option>
+<option>Nivel 4 - Especial / Auditoría</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-2 pointer-events-none text-secondary text-[18px]">expand_more</span>
+</div>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-low p-1 rounded"><button class="px-3 py-1 rounded bg-surface-container-lowest text-on-surface shadow-xs font-label-md text-label-md uppercase font-semibold" type="button">Todos (10)</button><button class="px-3 py-1 rounded text-secondary hover:text-on-surface font-label-md text-label-md uppercase" type="button">Operativos (9)</button><button class="px-3 py-1 rounded text-secondary hover:text-on-surface font-label-md text-label-md uppercase" type="button">Mantenimiento (1)</button></div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg mb-space-2xl items-start">
+<div class="lg:col-span-8 bg-surface-container-lowest rounded-xl shadow-sm border border-surface-container-high overflow-hidden">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low border-b border-surface-container-high text-secondary font-label-sm text-label-sm uppercase tracking-wider"><th class="py-3 px-space-md w-[26%]">Sector y Código</th><th class="py-3 px-space-md w-[14%]">Instalación</th><th class="py-3 px-space-md w-[22%]">Capacidad y Ocupación</th><th class="py-3 px-space-md w-[16%]">Horarios Habilitados</th><th class="py-3 px-space-md w-[12%]">Nivel Req.</th><th class="py-3 px-space-md w-[10%]">Estado</th><th class="py-3 px-space-md text-right">Acciones</th></tr>
+</thead>
+<tbody class="divide-y divide-surface-container-high text-body-sm font-body-sm text-on-surface">
+<tr class="hover:bg-surface-container-low/60 transition-colors bg-surface-container-lowest">
+<td class="py-3.5 px-space-md">
+<div class="font-headline-sm text-headline-sm font-semibold text-on-surface">Lab. de Síntesis Genética B</div>
+<div class="font-label-sm text-label-sm text-secondary font-mono">#SEC-NEST-04</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface">NEST-2</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center justify-between text-body-sm mb-1">
+<span class="font-medium">10 / 15 pers.</span>
+<span class="text-secondary font-label-sm text-label-sm">66%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 66%;"></div>
+</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<div class="text-on-surface font-medium">08:00 a 20:00 hs</div>
+<div class="text-secondary font-label-sm text-label-sm">Franjas de 3 horas</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<span class="inline-flex items-center px-2 py-0.5 rounded font-label-md text-label-md bg-secondary-container text-on-secondary-fixed font-semibold">Nivel 3 - Restringido</span>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span> Habilitado
+                </span>
+</td>
+<td class="py-3.5 px-space-md text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1 hover:bg-surface-container rounded text-secondary hover:text-primary transition-colors" title="Editar Sector" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1 hover:bg-surface-container rounded text-secondary hover:text-on-surface transition-colors" title="Ver Detalle" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/60 transition-colors bg-surface-container-lowest">
+<td class="py-3.5 px-space-md">
+<div class="font-headline-sm text-headline-sm font-semibold text-on-surface">Subnivel -6 Criocámaras</div>
+<div class="font-label-sm text-label-sm text-secondary font-mono">#SEC-NEST-06</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface">NEST-2</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center justify-between text-body-sm mb-1">
+<span class="font-medium">6 / 8 pers.</span>
+<span class="text-secondary font-label-sm text-label-sm">75%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 75%;"></div>
+</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<div class="text-on-surface font-medium">24 Horas</div>
+<div class="text-secondary font-label-sm text-label-sm">Operaciones continuas</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<span class="inline-flex items-center px-2 py-0.5 rounded font-label-md text-label-md bg-on-surface text-on-primary font-semibold">Nivel 4 - Especial</span>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span> Habilitado
+                </span>
+</td>
+<td class="py-3.5 px-space-md text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1 hover:bg-surface-container rounded text-secondary hover:text-primary transition-colors" title="Editar Sector" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1 hover:bg-surface-container rounded text-secondary hover:text-on-surface transition-colors" title="Ver Detalle" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/60 transition-colors bg-surface-container-lowest">
+<td class="py-3.5 px-space-md">
+<div class="font-headline-sm text-headline-sm font-semibold text-on-surface">Hangar de Almacenamiento 02</div>
+<div class="font-label-sm text-label-sm text-secondary font-mono">#SEC-TERR-02</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface">C. Terrestre</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center justify-between text-body-sm mb-1">
+<span class="font-medium">12 / 25 pers.</span>
+<span class="text-secondary font-label-sm text-label-sm">48%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 48%;"></div>
+</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<div class="text-on-surface font-medium">09:00 a 18:00 hs</div>
+<div class="text-secondary font-label-sm text-label-sm">Horario estándar</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<span class="inline-flex items-center px-2 py-0.5 rounded font-label-md text-label-md bg-surface-container-high text-on-surface font-semibold">Nivel 2 - Estándar</span>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span> Habilitado
+                </span>
+</td>
+<td class="py-3.5 px-space-md text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1 hover:bg-surface-container rounded text-secondary hover:text-primary transition-colors" title="Editar Sector" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1 hover:bg-surface-container rounded text-secondary hover:text-on-surface transition-colors" title="Ver Detalle" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/60 transition-colors bg-surface-container-lowest">
+<td class="py-3.5 px-space-md">
+<div class="font-headline-sm text-headline-sm font-semibold text-on-surface">Cámara de Cultivo 4</div>
+<div class="font-label-sm text-label-sm text-secondary font-mono">#SEC-SPEN-01</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface">L. Spencer</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center justify-between text-body-sm mb-1">
+<span class="font-medium text-error font-semibold">6 / 6 pers. (Lleno)</span>
+<span class="text-error font-label-sm text-label-sm font-bold">100%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-error rounded-full" style="width: 100%;"></div>
+</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<div class="text-on-surface font-medium">08:00 a 20:00 hs</div>
+<div class="text-secondary font-label-sm text-label-sm">Franjas de 2 horas</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<span class="inline-flex items-center px-2 py-0.5 rounded font-label-md text-label-md bg-secondary-container text-on-secondary-fixed font-semibold">Nivel 3 - Restringido</span>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span> Habilitado
+                </span>
+</td>
+<td class="py-3.5 px-space-md text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1 hover:bg-surface-container rounded text-secondary hover:text-primary transition-colors" title="Editar Sector" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1 hover:bg-surface-container rounded text-secondary hover:text-on-surface transition-colors" title="Ver Detalle" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/60 transition-colors bg-surface-container-lowest">
+<td class="py-3.5 px-space-md">
+<div class="font-headline-sm text-headline-sm font-semibold text-on-surface">Bóveda Aislada Norte</div>
+<div class="font-label-sm text-label-sm text-secondary font-mono">#SEC-ARK-08</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface">Arklay</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center justify-between text-body-sm mb-1">
+<span class="font-medium">0 / 4 pers.</span>
+<span class="text-secondary font-label-sm text-label-sm">0%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary-container rounded-full" style="width: 0%;"></div>
+</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<div class="text-on-surface font-medium">No disponible</div>
+<div class="text-secondary font-label-sm text-label-sm">Recalibración de sellos</div>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<span class="inline-flex items-center px-2 py-0.5 rounded font-label-md text-label-md bg-on-surface text-on-primary font-semibold">Nivel 4 - Especial</span>
+</td>
+<td class="py-3.5 px-space-md whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Mantenimiento
+                </span>
+</td>
+<td class="py-3.5 px-space-md text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1 hover:bg-surface-container rounded text-secondary hover:text-primary transition-colors" title="Editar Sector" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1 hover:bg-surface-container rounded text-secondary hover:text-on-surface transition-colors" title="Ver Detalle" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="px-space-md py-space-sm bg-surface-container-low border-t border-surface-container-high flex flex-col sm:flex-row items-center justify-between gap-space-sm text-label-sm font-label-sm text-secondary uppercase">
+<span>Mostrando 5 de 10 sectores registrados</span>
+<div class="flex items-center gap-1">
+<button class="px-2 py-1 bg-surface-container-lowest rounded border border-surface-container-high text-on-surface hover:bg-surface-container disabled:opacity-40" disabled="" type="button">Anterior</button>
+<span class="px-2 font-semibold text-on-surface">Página 1 de 2</span>
+<button class="px-2 py-1 bg-surface-container-lowest rounded border border-surface-container-high text-on-surface hover:bg-surface-container" type="button">Siguiente</button>
+</div>
+</div>
+</div>
+<div class="lg:col-span-4 bg-surface-container-lowest rounded-xl shadow-sm border border-surface-container-high p-space-lg flex flex-col gap-space-md sticky top-20">
+<div class="flex items-center justify-between border-b border-surface-container-high pb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-[20px]">tune</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold uppercase tracking-tight">Configuración Rápida</h2>
+</div>
+<span class="font-label-sm text-label-sm uppercase bg-surface-container px-2 py-0.5 rounded text-secondary">Edición en Lote</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded border border-surface-container-high">
+<p class="font-label-sm text-label-sm uppercase text-secondary">Sector Seleccionado:</p>
+<p class="font-headline-sm text-headline-sm text-on-surface font-semibold">Lab. de Síntesis Genética B</p>
+<p class="font-body-sm text-body-sm text-secondary font-mono">ID: SEC-NEST-04 • Complejo NEST-2</p>
+</div>
+<form class="flex flex-col gap-space-md" onsubmit="event.preventDefault();">
+<div>
+<label class="block font-label-md text-label-md uppercase tracking-wider text-secondary mb-1">Capacidad Máxima (Aforo)</label>
+<div class="flex items-center gap-2">
+<input class="w-full bg-surface-container-lowest border border-surface-container-high px-3 py-1.5 rounded font-body-md text-body-md text-on-surface focus:border-primary-container outline-none" max="100" min="1" type="number" value="15">
+<span class="font-body-sm text-body-sm text-secondary shrink-0">personas</span>
+</div>
+<p class="font-label-sm text-label-sm text-secondary mt-1">El aforo impacta en las advertencias del panel general.</p>
+</div>
+<div>
+<label class="block font-label-md text-label-md uppercase tracking-wider text-secondary mb-1">Ventana Horaria de Operación</label>
+<div class="grid grid-cols-2 gap-2">
+<div>
+<span class="text-label-sm font-label-sm text-secondary block">Apertura</span>
+<input class="w-full bg-surface-container-lowest border border-surface-container-high px-2 py-1.5 rounded font-body-sm text-body-sm text-on-surface focus:border-primary-container outline-none" type="time" value="08:00">
+</div>
+<div>
+<span class="text-label-sm font-label-sm text-secondary block">Cierre</span>
+<input class="w-full bg-surface-container-lowest border border-surface-container-high px-2 py-1.5 rounded font-body-sm text-body-sm text-on-surface focus:border-primary-container outline-none" type="time" value="20:00">
+</div>
+</div>
+<div class="flex items-center gap-2 mt-2">
+<input class="accent-primary-container rounded" id="check-24h" type="checkbox">
+<label class="font-body-sm text-body-sm text-on-surface" for="check-24h">Habilitar operación 24 horas</label>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md uppercase tracking-wider text-secondary mb-1">Nivel Mínimo de Autorización</label>
+<select class="w-full bg-surface-container-lowest border border-surface-container-high px-3 py-2 rounded font-body-sm text-body-sm text-on-surface focus:border-primary-container outline-none">
+<option value="2">Nivel 2 — Personal Estándar</option>
+<option selected="" value="3">Nivel 3 — Investigador Restringido</option>
+<option value="4">Nivel 4 — Especial / Auditoría</option>
+</select>
+</div>
+<div>
+<label class="block font-label-md text-label-md uppercase tracking-wider text-secondary mb-1">Estado de Disponibilidad</label>
+<div class="grid grid-cols-2 gap-2">
+<label class="flex items-center gap-2 p-2 rounded bg-surface-container-low cursor-pointer border border-transparent hover:border-surface-container-high">
+<input checked="" class="accent-primary-container" name="sector-status" type="radio">
+<span class="font-body-sm text-body-sm font-medium text-on-surface">Habilitado</span>
+</label>
+<label class="flex items-center gap-2 p-2 rounded bg-surface-container-low cursor-pointer border border-transparent hover:border-surface-container-high">
+<input class="accent-primary-container" name="sector-status" type="radio">
+<span class="font-body-sm text-body-sm font-medium text-secondary">Mantenimiento</span>
+</label>
+</div>
+</div>
+<div class="flex items-center gap-2 pt-2 border-t border-surface-container-high">
+<button class="w-full py-2 bg-primary-container text-on-primary font-label-lg text-label-lg rounded shadow-sm hover:bg-primary transition-colors text-center" type="button">
+            Guardar Cambios
+          </button>
+<button class="px-3 py-2 bg-surface-container text-on-surface font-label-lg text-label-lg rounded hover:bg-surface-container-high transition-colors" type="reset">
+            Cancelar
+          </button>
+</div>
+</form>
+</div>
+</div>
+<div class="fixed inset-0 z-50 bg-black/40 backdrop-blur-xs flex items-center justify-center p-4 hidden" id="modal-new-sector">
+<div class="bg-surface-container-lowest w-full max-w-xl rounded-xl shadow-xl border border-surface-container-high overflow-hidden animate-in fade-in zoom-in-95 duration-150">
+<div class="px-space-lg py-space-md bg-surface-container-low border-b border-surface-container-high flex items-center justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold uppercase tracking-tight">Crear Nuevo Sector</h3>
+<p class="font-body-sm text-body-sm text-secondary">Registre una nueva zona de operaciones y sus normas de aforo.</p>
+</div>
+<button class="p-1 rounded text-secondary hover:text-on-surface hover:bg-surface-container-high" id="btn-close-modal" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="p-space-lg flex flex-col gap-space-md">
+<div class="grid grid-cols-2 gap-space-md">
+<div>
+<label class="block font-label-md text-label-md uppercase tracking-wider text-secondary mb-1">Código del Sector</label>
+<input class="w-full bg-surface-container-low border border-surface-container-high px-3 py-2 rounded font-body-sm text-body-sm text-on-surface focus:border-primary-container outline-none uppercase font-mono" placeholder="Ej. SEC-NEST-09" type="text">
+</div>
+<div>
+<label class="block font-label-md text-label-md uppercase tracking-wider text-secondary mb-1">Instalación Asignada</label>
+<select class="w-full bg-surface-container-low border border-surface-container-high px-3 py-2 rounded font-body-sm text-body-sm text-on-surface focus:border-primary-container outline-none">
+<option>Complejo Arklay // NEST-2</option>
+<option>Centro de Ensayos Terrestres</option>
+<option>Laboratorio Spencer</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md uppercase tracking-wider text-secondary mb-1">Nombre Descriptivo del Sector</label>
+<input class="w-full bg-surface-container-low border border-surface-container-high px-3 py-2 rounded font-body-sm text-body-sm text-on-surface focus:border-primary-container outline-none" placeholder="Ej. Laboratorio de Virología Aplicada" type="text">
+</div>
+<div class="grid grid-cols-2 gap-space-md">
+<div>
+<label class="block font-label-md text-label-md uppercase tracking-wider text-secondary mb-1">Aforo Máximo Permitido</label>
+<input class="w-full bg-surface-container-low border border-surface-container-high px-3 py-2 rounded font-body-sm text-body-sm text-on-surface focus:border-primary-container outline-none" placeholder="Ej. 12" type="number">
+</div>
+<div>
+<label class="block font-label-md text-label-md uppercase tracking-wider text-secondary mb-1">Nivel de Acceso Requerido</label>
+<select class="w-full bg-surface-container-low border border-surface-container-high px-3 py-2 rounded font-body-sm text-body-sm text-on-surface focus:border-primary-container outline-none">
+<option>Nivel 2 — Personal Estándar</option>
+<option>Nivel 3 — Investigador Restringido</option>
+<option>Nivel 4 — Especial / Auditoría</option>
+</select>
+</div>
+</div>
+<div class="pt-2">
+<label class="block font-label-md text-label-md uppercase tracking-wider text-secondary mb-1">Horario de Operación Permitido</label>
+<div class="grid grid-cols-2 gap-space-md">
+<input class="w-full bg-surface-container-low border border-surface-container-high px-3 py-2 rounded font-body-sm text-body-sm text-on-surface outline-none" type="time" value="08:00">
+<input class="w-full bg-surface-container-low border border-surface-container-high px-3 py-2 rounded font-body-sm text-body-sm text-on-surface outline-none" type="time" value="20:00">
+</div>
+</div>
+</div>
+<div class="px-space-lg py-space-sm bg-surface-container-low border-t border-surface-container-high flex justify-end gap-2">
+<button class="px-4 py-2 bg-surface-container-lowest text-on-surface font-label-lg text-label-lg rounded hover:bg-surface-container transition-colors border border-surface-container-high" id="btn-cancel-modal" type="button">Cancelar</button>
+<button class="px-4 py-2 bg-primary-container text-on-primary font-label-lg text-label-lg rounded hover:bg-primary transition-colors" type="button">Registrar Sector</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    const btnCreate = document.getElementById('btn-create-sector');
+    const modal = document.getElementById('modal-new-sector');
+    const btnClose = document.getElementById('btn-close-modal');
+    const btnCancel = document.getElementById('btn-cancel-modal');
+
+    function toggleModal(show) {
+      if (modal) {
+        if (show) {
+          modal.classList.remove('hidden');
+        } else {
+          modal.classList.add('hidden');
+        }
+      }
+    }
+
+    if (btnCreate) btnCreate.addEventListener('click', () => toggleModal(true));
+    if (btnClose) btnClose.addEventListener('click', () => toggleModal(false));
+    if (btnCancel) btnCancel.addEventListener('click', () => toggleModal(false));
+  })();
+</script></main></div>
+
+</body></html>

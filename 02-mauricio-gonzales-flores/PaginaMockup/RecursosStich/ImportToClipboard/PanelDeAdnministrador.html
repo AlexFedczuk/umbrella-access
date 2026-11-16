@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-surface-variant": "#5c403f", "on-primary-container": "#ffdad8", "on-primary": "#ffffff", "primary-fixed": "#ffdad8", "on-tertiary-container": "#d9e3fb", "on-tertiary-fixed": "#111c2d", "on-error-container": "#93000a", "on-secondary-fixed-variant": "#44474f", "inverse-primary": "#ffb3b1", "on-error": "#ffffff", "surface-dim": "#d9dadc", "on-surface": "#191c1e", "error-container": "#ffdad6", "secondary": "#5c5e66", "on-secondary-container": "#62646d", "tertiary-fixed": "#d9e3fb", "inverse-surface": "#2e3132", "primary": "#9e001f", "on-primary-fixed-variant": "#92001c", "on-primary-fixed": "#410007", "primary-container": "#c8102e", "tertiary-container": "#5b657a", "primary-fixed-dim": "#ffb3b1", "on-secondary": "#ffffff", "surface-container": "#edeef0", "error": "#ba1a1a", "secondary-container": "#e0e2ec", "surface-bright": "#f8f9fb", "surface-container-high": "#e7e8ea", "surface-container-highest": "#e1e2e4", "surface-variant": "#e1e2e4", "on-tertiary-fixed-variant": "#3d475a", "on-tertiary": "#ffffff", "tertiary": "#434d61", "secondary-fixed": "#e0e2ec", "on-background": "#191c1e", "surface-container-lowest": "#ffffff", "surface": "#f8f9fb", "outline-variant": "#e5bdbb", "inverse-on-surface": "#f0f1f3", "outline": "#906f6e", "surface-tint": "#bf0229", "tertiary-fixed-dim": "#bdc7de", "on-secondary-fixed": "#191c22", "secondary-fixed-dim": "#c4c6d0", "background": "#f8f9fb", "surface-container-low": "#f3f4f6" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-lg": "1.5rem", "space-2xl": "3rem", "margin-desktop": "2rem", "space-sm": "0.5rem", "gutter": "1rem", "space-xl": "2rem", "gutter-desktop": "1.5rem", "margin": "1rem", "space-xs": "0.25rem", "space-md": "1rem" }, "fontFamily": { "label-sm": ["Inter"], "display-lg-mobile": ["Inter"], "display-lg": ["Inter"], "body-md": ["Inter"], "label-lg": ["Inter"], "headline-lg": ["Inter"], "headline-sm": ["Inter"], "headline-md": ["Inter"], "label-md": ["Inter"], "body-sm": ["Inter"], "body-lg": ["Inter"] }, "fontSize": { "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "700" }], "display-lg-mobile": ["26px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "display-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0", "fontWeight": "400" }], "label-lg": ["13px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "headline-sm": ["16px", { "lineHeight": "24px", "letterSpacing": "0", "fontWeight": "600" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-md": ["11px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0", "fontWeight": "400" }], "body-lg": ["15px", { "lineHeight": "22px", "letterSpacing": "0", "fontWeight": "400" }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col"><div class="h-14 px-space-md flex items-center gap-space-sm bg-surface-container-lowest"><div class="w-2.5 h-2.5 rounded-full bg-primary-container"></div><span class="font-headline-sm text-headline-sm uppercase text-on-surface tracking-wider font-bold">Umbrella Admin</span></div><div class="px-space-md py-space-xs"><div class="px-space-sm py-1 bg-surface-container-low rounded-lg text-on-surface-variant font-label-sm text-label-sm uppercase flex items-center justify-between"><span>Sector: Global</span><span class="w-1.5 h-1.5 rounded-full bg-primary"></span></div></div><nav class="flex flex-col gap-1 p-space-sm mt-space-xs" data-active-classes="bg-primary-container text-on-primary font-label-lg rounded-lg"><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm transition-all bg-primary-container text-on-primary font-label-lg rounded-lg" data-path="panel-de-control" href="#"><span class="material-symbols-outlined text-[18px]">grid_view</span><span>Panel de Control</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="instalaciones-y-sectores" href="#"><span class="material-symbols-outlined text-[18px]">domain</span><span>Instalaciones y Sectores</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="usuarios-y-permisos" href="#"><span class="material-symbols-outlined text-[18px]">manage_accounts</span><span>Usuarios y Permisos</span></a></nav></div><div class="p-space-sm bg-surface-container-low"><div class="px-space-sm py-space-xs mb-space-xs"><p class="font-label-md text-label-md text-on-surface font-semibold truncate">Lic. A. Ashford</p><p class="font-label-sm text-label-sm text-on-surface-variant uppercase truncate">Administrador General</p></div><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-highest hover:text-on-surface transition-colors" data-path="login" href="#"><span class="material-symbols-outlined text-[18px]">logout</span><span>Cerrar Sesión</span></a></div></aside><div class="pl-64 flex flex-col min-h-screen"><header class="fixed top-0 left-64 right-0 h-14 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40"><div class="w-full h-14 px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-md"><span class="font-label-lg text-label-lg uppercase tracking-wide text-on-surface">UMBRELLA ACCESS // PANEL DE ADMINISTRACIÓN</span><span class="px-space-sm py-0.5 bg-surface-container-high text-primary font-label-sm text-label-sm uppercase rounded">SISTEMA ACTIVO // MODO ADMINISTRADOR</span></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm uppercase bg-surface-container-low px-space-sm py-1 rounded"><span class="material-symbols-outlined text-[16px]">corporate_fare</span><span>Instalación Central</span></div><div class="flex items-center gap-space-sm pl-space-sm"><div class="text-right hidden md:block"><div class="font-label-sm text-label-sm text-on-surface uppercase">Lic. A. Ashford</div><div class="font-label-sm text-label-sm text-on-surface-variant">Admin General</div></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/ALJJyrDC5hcqQGmA7IYYgbNtM-Ku7tVX4xHFw6BosPxr355SJ__20LajBKWndvivqy40psQqIzdPZnFnsA62ezlu1IZrhLWCRdLP5xbFPZObmsbMkdVgDeeE6Rm9Ip1VxfKmeC04A05oZg9Wjjzp6pNhPa0NqNLQpwGU0lXWsg57urerKP7BrwDyvngwcvoQn4Yj6s3TthEQb_KvOqeP9QTdI3ZHLa21iwDYcVQA6EaCQepFRkbKPf3LKzmigQg"/></div></div></div></header><main class="w-full pt-14 px-space-lg bg-surface flex-1"><div class="flex flex-col w-full pb-space-2xl">
+<!-- Sub-header Operativo y Acciones Globales -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md pt-space-lg pb-space-lg">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm uppercase mb-1">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span>Consola Central Operativa // Directiva Corporativa</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight font-bold">
+        Panel de Administración
+      </h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">
+        Visión general operativa, gestión de instalaciones y control de solicitudes corporativas de acceso.
+      </p>
+</div>
+<!-- Acciones Rápidas -->
+<div class="flex items-center gap-space-sm self-start md:self-auto">
+<button class="inline-flex items-center gap-space-xs px-space-md py-2 bg-surface-container-lowest text-on-surface font-label-lg text-label-lg rounded-lg shadow-sm hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">file_download</span>
+<span>Exportar Reporte del Día</span>
+</button>
+<button class="inline-flex items-center gap-space-xs px-space-md py-2 bg-primary-container text-on-primary font-label-lg text-label-lg rounded-lg shadow-sm hover:opacity-95 transition-opacity">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>Nuevo Sector o Instalación</span>
+</button>
+</div>
+</div>
+<!-- Banner Informativo de Auditoría de Protocolo -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-md mb-space-lg flex flex-col md:flex-row items-start md:items-center justify-between gap-space-sm shadow-sm">
+<div class="flex items-center gap-space-md">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">verified_user</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase text-primary font-bold">Vigencia Protocolar // Umbrella Access</span>
+<span class="font-body-sm text-body-sm text-on-surface">Los registros se procesan según la Directiva Operativa 2026-B. Última sincronización central: 08:42:15 GMT-5.</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs px-space-sm py-1 bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm rounded uppercase tracking-wider">
+<span class="material-symbols-outlined text-[14px]">cloud_done</span>
+<span>Base Arklay Sincronizada</span>
+</div>
+</div>
+<!-- Métricas Principales (4 KPI Cards) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md mb-space-xl">
+<!-- KPI 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">Programación Activa</span>
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface mt-1">38</span>
+<span class="font-label-sm text-label-sm text-on-surface mt-0.5">Total de Turnos del Día</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[22px]">calendar_month</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-low rounded-lg p-space-xs px-space-sm flex items-center justify-between">
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span>Autorizados: <strong class="text-on-surface">24</strong></span>
+</div>
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>Finalizados: <strong class="text-on-surface">14</strong></span>
+</div>
+</div>
+</div>
+<!-- KPI 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">Atención Requerida</span>
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface mt-1">05</span>
+<span class="font-label-sm text-label-sm text-on-surface mt-0.5">Solicitudes Pendientes</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-amber-50 flex items-center justify-center text-amber-700">
+<span class="material-symbols-outlined text-[22px]">pending_actions</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded font-label-sm text-label-sm bg-amber-50 text-amber-800 uppercase font-semibold">
+<span class="material-symbols-outlined text-[13px]">warning</span>
+          Requieren Dictamen
+        </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Resp. prom: 18m</span>
+</div>
+</div>
+<!-- KPI 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">Infraestructura</span>
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface mt-1">03</span>
+<span class="font-label-sm text-label-sm text-on-surface mt-0.5">Instalaciones Activas</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[22px]">corporate_fare</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs text-on-surface-variant font-label-sm text-label-sm truncate">
+        Complejo Arklay / NEST-2 / Spencer
+      </div>
+</div>
+<!-- KPI 4 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">Control Manual de Guardia</span>
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface mt-1">18</span>
+<span class="font-label-sm text-label-sm text-on-surface mt-0.5">Accesos Registrados Hoy</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-emerald-50 flex items-center justify-center text-emerald-700">
+<span class="material-symbols-outlined text-[22px]">badge</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-emerald-800">
+<span class="material-symbols-outlined text-[15px]">check_circle</span>
+          Sin anomalías en puesto
+        </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Último: hace 4m</span>
+</div>
+</div>
+</div>
+<!-- Sección de Accesos Directos a Funciones Administrativas -->
+<div class="mb-space-xl">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">settings_suggest</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface uppercase tracking-wide font-bold">
+          Accesos Directos a Funciones Administrativas
+        </h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">3 Módulos Principales</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Tarjeta Módulo 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div>
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary-container mb-space-md">
+<span class="material-symbols-outlined text-[22px]">domain</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">
+            Gestión de Instalaciones y Sectores
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+            Configurar capacidad de aforo, horarios de acceso y requisitos de nivel de autorización por sector.
+          </p>
+</div>
+<div class="mt-space-lg pt-space-md bg-surface-container-low rounded-lg p-space-sm flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">8 sectores asignados</span>
+<button class="inline-flex items-center gap-1 font-label-lg text-label-lg text-primary-container hover:underline font-semibold">
+<span>Administrar Instalaciones</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Tarjeta Módulo 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div>
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary-container mb-space-md">
+<span class="material-symbols-outlined text-[22px]">manage_accounts</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">
+            Usuarios y Autorizaciones
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+            Gestionar permisos por nivel de credencial (Nivel 1 a 4) para empleados, visitantes y proveedores.
+          </p>
+</div>
+<div class="mt-space-lg pt-space-md bg-surface-container-low rounded-lg p-space-sm flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">142 perfiles vigentes</span>
+<button class="inline-flex items-center gap-1 font-label-lg text-label-lg text-primary-container hover:underline font-semibold">
+<span>Gestionar Usuarios</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Tarjeta Módulo 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div>
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary-container mb-space-md">
+<span class="material-symbols-outlined text-[22px]">shield_person</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">
+            Auditoría de Registros de Ingreso
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+            Consultar historial de ingresos y egresos registrados manualmente por los puestos de guardia.
+          </p>
+</div>
+<div class="mt-space-lg pt-space-md bg-surface-container-low rounded-lg p-space-sm flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Bitácora no alterable</span>
+<button class="inline-flex items-center gap-1 font-label-lg text-label-lg text-primary-container hover:underline font-semibold">
+<span>Consultar Registros</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Sección Inferior: Solicitudes Recientes que Requieren Aprobación Administrativa -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+<!-- Header de la tabla -->
+<div class="px-space-lg py-space-md flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm bg-surface-container-low">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">
+          Solicitudes Recientes que Requieren Aprobación Administrativa
+        </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+          Listado de accesos especiales sujetos a verificación manual antes de la expedición de credencial en puesto.
+        </p>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="px-space-sm py-1 bg-amber-100 text-amber-900 rounded font-label-sm text-label-sm uppercase font-semibold">
+          3 en cola inmediata
+        </span>
+</div>
+</div>
+<!-- Tabla de Solicitudes -->
+<div class="w-full overflow-x-auto">
+<table class="w-full text-left">
+<thead>
+<tr class="bg-surface-container font-label-sm text-label-sm text-on-surface-variant uppercase">
+<th class="py-space-sm px-space-md">Solicitante</th>
+<th class="py-space-sm px-space-md">Instalación y Sector</th>
+<th class="py-space-sm px-space-md">Fecha Programada</th>
+<th class="py-space-sm px-space-md">Franja Horaria</th>
+<th class="py-space-sm px-space-md">Nivel Req.</th>
+<th class="py-space-sm px-space-md">Estado Actual</th>
+<th class="py-space-sm px-space-md text-right">Acciones de Resolución</th>
+</tr>
+</thead>
+<tbody class="divide-none text-body-md text-on-surface">
+<!-- Fila 1: Dra. Rebecca Chambers -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant font-label-sm font-bold">
+                  RC
+                </div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Dra. Rebecca Chambers</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Visitante // Asesora Médica Externa</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Laboratorio Spencer</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Ala Este - Virología Clínica</span>
+</div>
+</td>
+<td class="py-space-md px-space-md font-body-sm">
+<span class="font-semibold text-on-surface">21 Oct 2026</span>
+</td>
+<td class="py-space-md px-space-md font-body-sm">
+<span class="px-2 py-0.5 bg-surface-container-high rounded text-on-surface font-mono">10:00 - 13:00 hs</span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-container-high text-on-surface font-bold">
+                Nivel 3
+              </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded font-label-sm text-label-sm bg-amber-50 text-amber-800 uppercase font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+                En Revisión
+              </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="inline-flex items-center gap-space-xs">
+<button class="px-3 py-1.5 bg-emerald-700 hover:bg-emerald-800 text-white rounded font-label-sm text-label-sm uppercase font-semibold transition-colors flex items-center gap-1" onclick="resolverSolicitud(this, 'aprobada', 'Rebecca Chambers')">
+<span class="material-symbols-outlined text-[14px]">check</span>
+                  Aprobar
+                </button>
+<button class="px-3 py-1.5 bg-surface-container-high hover:bg-error-container text-on-surface hover:text-error rounded font-label-sm text-label-sm uppercase font-semibold transition-colors flex items-center gap-1" onclick="resolverSolicitud(this, 'denegada', 'Rebecca Chambers')">
+<span class="material-symbols-outlined text-[14px]">close</span>
+                  Rechazar
+                </button>
+<button class="px-2 py-1.5 text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm uppercase transition-colors" title="Ver expediente">
+                  Revisar
+                </button>
+</div>
+</td>
+</tr>
+<!-- Fila 2: Carlos Oliveira -->
+<tr class="hover:bg-surface-container-low transition-colors bg-surface-container-lowest">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant font-label-sm font-bold">
+                  CO
+                </div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Carlos Oliveira</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Empleado // Mantenimiento Técnico</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">NEST-2</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Plataforma Carga Subterránea</span>
+</div>
+</td>
+<td class="py-space-md px-space-md font-body-sm">
+<span class="font-semibold text-on-surface">21 Oct 2026</span>
+</td>
+<td class="py-space-md px-space-md font-body-sm">
+<span class="px-2 py-0.5 bg-surface-container-high rounded text-on-surface font-mono">08:00 - 12:00 hs</span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-container-high text-on-surface font-bold">
+                Nivel 2
+              </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded font-label-sm text-label-sm bg-amber-50 text-amber-800 uppercase font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+                En Revisión
+              </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="inline-flex items-center gap-space-xs">
+<button class="px-3 py-1.5 bg-emerald-700 hover:bg-emerald-800 text-white rounded font-label-sm text-label-sm uppercase font-semibold transition-colors flex items-center gap-1" onclick="resolverSolicitud(this, 'aprobada', 'Carlos Oliveira')">
+<span class="material-symbols-outlined text-[14px]">check</span>
+                  Aprobar
+                </button>
+<button class="px-3 py-1.5 bg-surface-container-high hover:bg-error-container text-on-surface hover:text-error rounded font-label-sm text-label-sm uppercase font-semibold transition-colors flex items-center gap-1" onclick="resolverSolicitud(this, 'denegada', 'Carlos Oliveira')">
+<span class="material-symbols-outlined text-[14px]">close</span>
+                  Rechazar
+                </button>
+<button class="px-2 py-1.5 text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm uppercase transition-colors" title="Ver expediente">
+                  Revisar
+                </button>
+</div>
+</td>
+</tr>
+<!-- Fila 3: Proveedor Criogénica Global -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant font-label-sm font-bold">
+                  ER
+                </div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Criogénica Global (Elena Rostova)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Proveedor // Suministro de Nitrógeno</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">NEST-2</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Subnivel -6 (Cámaras de Aislamiento)</span>
+</div>
+</td>
+<td class="py-space-md px-space-md font-body-sm">
+<span class="font-semibold text-on-surface">22 Oct 2026</span>
+</td>
+<td class="py-space-md px-space-md font-body-sm">
+<span class="px-2 py-0.5 bg-surface-container-high rounded text-on-surface font-mono">09:00 - 11:30 hs</span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center px-2 py-0.5 rounded font-label-sm text-label-sm bg-primary-container text-on-primary font-bold">
+                Nivel 4
+              </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded font-label-sm text-label-sm bg-amber-50 text-amber-800 uppercase font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+                En Revisión
+              </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="inline-flex items-center gap-space-xs">
+<button class="px-3 py-1.5 bg-emerald-700 hover:bg-emerald-800 text-white rounded font-label-sm text-label-sm uppercase font-semibold transition-colors flex items-center gap-1" onclick="resolverSolicitud(this, 'aprobada', 'Elena Rostova')">
+<span class="material-symbols-outlined text-[14px]">check</span>
+                  Aprobar
+                </button>
+<button class="px-3 py-1.5 bg-surface-container-high hover:bg-error-container text-on-surface hover:text-error rounded font-label-sm text-label-sm uppercase font-semibold transition-colors flex items-center gap-1" onclick="resolverSolicitud(this, 'denegada', 'Elena Rostova')">
+<span class="material-symbols-outlined text-[14px]">close</span>
+                  Rechazar
+                </button>
+<button class="px-2 py-1.5 text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm uppercase transition-colors" title="Ver expediente">
+                  Revisar
+                </button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Footer de la tabla con paginación y sumario -->
+<div class="px-space-lg py-space-sm bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-sm text-on-surface-variant">
+<div class="font-body-sm text-body-sm">
+        Mostrando 3 de 5 solicitudes pendientes de validación
+      </div>
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm">
+<button class="px-space-sm py-1 bg-surface-container-highest rounded text-on-surface hover:bg-surface-container-high transition-colors">
+          Anterior
+        </button>
+<span class="px-2 py-1 bg-surface-container-lowest font-bold text-on-surface rounded shadow-sm">1</span>
+<button class="px-space-sm py-1 bg-surface-container-highest rounded text-on-surface hover:bg-surface-container-high transition-colors">
+          Siguiente
+        </button>
+</div>
+</div>
+</div>
+<!-- Toast Notificador Interactivo (Oculto por defecto) -->
+<div class="fixed bottom-space-lg right-space-lg bg-surface-container-lowest rounded-xl shadow-xl p-space-md max-w-sm hidden flex-row items-center gap-space-md z-50 transition-all duration-300" id="toastNotification">
+<div class="w-10 h-10 rounded-lg flex items-center justify-center" id="toastIconBg">
+<span class="material-symbols-outlined text-[20px]" id="toastIcon"></span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-bold" id="toastTitle"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant" id="toastMessage"></span>
+</div>
+</div>
+</div>
+<script>
+  function resolverSolicitud(buttonElement, estado, solicitante) {
+    const row = buttonElement.closest('tr');
+    const statusCell = row.children[5];
+    const actionsCell = row.children[6];
+
+    if (estado === 'aprobada') {
+      statusCell.innerHTML = `
+        <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded font-label-sm text-label-sm bg-emerald-50 text-emerald-800 uppercase font-semibold">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>
+          Autorizada
+        </span>
+      `;
+      actionsCell.innerHTML = `
+        <span class="font-label-sm text-label-sm text-emerald-700 font-semibold px-2 py-1 bg-emerald-50 rounded">
+          Procesado por Admin
+        </span>
+      `;
+      mostrarToast('Autorización Concedida', `Pase generado para ${solicitante}.`, 'aprobada');
+    } else {
+      statusCell.innerHTML = `
+        <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded font-label-sm text-label-sm bg-rose-50 text-rose-800 uppercase font-semibold">
+          <span class="w-1.5 h-1.5 rounded-full bg-rose-600"></span>
+          Denegada
+        </span>
+      `;
+      actionsCell.innerHTML = `
+        <span class="font-label-sm text-label-sm text-error font-semibold px-2 py-1 bg-error-container rounded">
+          Acceso Rechazado
+        </span>
+      `;
+      mostrarToast('Solicitud Rechazada', `Se notificó al solicitante ${solicitante}.`, 'denegada');
+    }
+  }
+
+  function mostrarToast(titulo, mensaje, tipo) {
+    const toast = document.getElementById('toastNotification');
+    const toastTitle = document.getElementById('toastTitle');
+    const toastMessage = document.getElementById('toastMessage');
+    const toastIconBg = document.getElementById('toastIconBg');
+    const toastIcon = document.getElementById('toastIcon');
+
+    toastTitle.innerText = titulo;
+    toastMessage.innerText = mensaje;
+
+    if (tipo === 'aprobada') {
+      toastIconBg.className = 'w-10 h-10 rounded-lg flex items-center justify-center bg-emerald-100 text-emerald-700';
+      toastIcon.innerText = 'done_all';
+    } else {
+      toastIconBg.className = 'w-10 h-10 rounded-lg flex items-center justify-center bg-rose-100 text-error';
+      toastIcon.innerText = 'block';
+    }
+
+    toast.classList.remove('hidden');
+    toast.classList.add('flex');
+
+    setTimeout(() => {
+      toast.classList.add('hidden');
+      toast.classList.remove('flex');
+    }, 4000);
+  }
+</script></main></div></body></html>
